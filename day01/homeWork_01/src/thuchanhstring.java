@@ -1,4 +1,4 @@
-public class thuchanhString {
+public class thuchanhstring {
     public static void main(String[] args){
         String str1 = "Bùi Hiên";
         String str2 = "Bùi Hiên";
