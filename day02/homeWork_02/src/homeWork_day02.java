@@ -23,7 +23,7 @@ public class homeWork_day02 {
         String sex = sc.nextLine();
         System.out.println("Nhập địa chỉ");
         String address = sc.nextLine();
-        System.out.println("Tôi tên là " + name + ", năm nay " + age + " tuổi " + ", hiện tại đang sinh sống tại "
+        System.out.println("Tôi tên là " + name + ", năm nay " + age + " tuổi " + ", giới tính " + sex + ", hiện tại đang sinh sống tại "
                 + address);
     }
 }

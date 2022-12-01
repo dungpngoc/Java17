@@ -1,6 +1,6 @@
 public class switchcase {
     public static void main(String[] args) {
-        int money = 18000;
+        int money = 8000;
 
         switch (money) {
             case 12000:
