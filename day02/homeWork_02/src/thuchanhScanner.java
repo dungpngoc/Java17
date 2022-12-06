@@ -39,7 +39,7 @@ public class thuchanhScanner {
         System.out.println("In hoa chuỗi vừa nhập " + in.toUpperCase());
         System.out.println("In thường chuỗi vừa nhập " + in.toLowerCase());
         System.out.println("Số ký tự trong chuỗi là " + in.length());
-        System.out.println("Ký tự cuối cùng trong chuỗi là " + in.charAt(15));
+        System.out.println("Ký tự cuối cùng trong chuỗi là " + in.charAt(in.length()-1));
         System.out.println("5 ký tự đầu tiên của chuỗi là " + in.substring(0,5));
         System.out.println("Chuỗi có chứa chữ hello ko " + in.equals("Hello"));
     }

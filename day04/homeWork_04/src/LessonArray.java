@@ -24,17 +24,17 @@ public class LessonArray {
         // Số nguyên x được nhập từ bàn phím.
         // In ra thông tin các phần tử cửa arrayA dưới kiểu dữ liệu String, (Sử dụng Arrays.toString() )
         // Thực hiện sắp xếp man arrayA theo thứ tự tăng dần và in ra mảng sau sắp xếp.
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("Nhập chiều dài của mảng : ");
-//        int arrLength = sc.nextInt();
-//        int[] arrayA = new int[arrLength];
-//        for (int i = 0;i<arrayA.length;i++) {
-//            System.out.println("Phần tử tại vị trí thứ : " + i + "là : ");
-//            arrayA[i] = sc.nextInt();
-//        }
-//        System.out.println("Thông tin mảng arrayA dưới dạng String là : " + Arrays.toString(arrayA));
-//        Arrays.sort(arrayA);
-//        System.out.println("Sắp xếp mảng arrayA theo thứ tự tăng dần : "+ Arrays.toString(arrayA));
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Nhập chiều dài của mảng : ");
+        int arrLength = sc.nextInt();
+        int[] arrayA = new int[arrLength];
+        for (int i = 0;i<arrayA.length;i++) {
+            System.out.println("Phần tử tại vị trí thứ : " + i + "là : ");
+            arrayA[i] = sc.nextInt();
+        }
+        System.out.println("Thông tin mảng arrayA dưới dạng String là : " + Arrays.toString(arrayA));
+        Arrays.sort(arrayA);
+        System.out.println("Sắp xếp mảng arrayA theo thứ tự tăng dần : "+ Arrays.toString(arrayA));
 
         // 3. Khởi tạo mảng 2 chiều số nguyên int arrayB[m][n] với số hàng m, số cột n( m,n>0) và các phần tử
         // được nhập từ bàn phím.

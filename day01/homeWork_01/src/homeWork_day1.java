@@ -1,6 +1,6 @@
 public class homeWork_day1 {
 //     1. In ra dòng chữ: Xin chào các bạn.
-    // Đầu tiên là khai báo biến và gán giá trị trong method main, sau đó mới tạo được method mới ở dướigit p
+    // Đầu tiên là khai báo biến và gán giá trị trong method main, sau đó mới tạo được method mới ở dưới
 
     public static void main(String[] args) {
         xinChao();
