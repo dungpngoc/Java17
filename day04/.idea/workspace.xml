@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dc74b1d3-8afe-48ac-a026-2848a8d71d0f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/homeWork_04/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homeWork_04/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homeWork_04/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homeWork_04/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homeWork_04/homeWork_04.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homeWork_04/src/lessonArray4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homeWork_04/src/t.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day05/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day05/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day05/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day05/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day05/homeWork_05/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day05/homeWork_05/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day05/homeWork_05/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day05/homeWork_05/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day05/homeWork_05/src/Array2dDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day05/homeWork_05/src/ArrayDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day05/homeWork_05/src/PrintShape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day05/homeWork_05/src/lessonArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day05/homeWork_05/src/lessonArray2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day05/homeWork_05/src/minitest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day06/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day06/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day06/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day06/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day06/homeWork_06/src/a.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day06/homeWork_06/src/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/Java17.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/Java17.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homeWork_04/src/LessonArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/homeWork_04/src/LessonArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homeWork_04/src/homeWork_day04.java" beforeDir="false" afterPath="$PROJECT_DIR$/homeWork_04/src/homeWork_day04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homeWork_04/src/lessonForLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/homeWork_04/src/lessonForLoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Java17/DateTime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Java17/LessonArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Java17/LessonWhile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Java17/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Java17/MenuDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Java17/WhileDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Java17/classScanner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Java17/homeWork_day02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Java17/homeWork_day03.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Java17/homeWork_day04.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Java17/homeWork_day1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Java17/ifDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Java17/lessonForLoop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Java17/localDateTime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Java17/localdate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Java17/menuTerminal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Java17/switchcase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Java17/tesst.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Java17/thuchanhScanner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Java17/thuchanhifelse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Java17/thuchanhifelse1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Java17/thuchanhsc2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Java17/thuchanhstring.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Java17/thuchanhswitchcase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Java17/thuchanhtoantu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Java17/vonglap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Java17/xuatdulieutrongjava.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2Id6xDd3PgGRsfGoTprzDNKOUao" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Intelliji/Java17/day05&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc74b1d3-8afe-48ac-a026-2848a8d71d0f" name="Changes" comment="" />
+      <created>1670499358106</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670499358106</updated>
+      <workItem from="1670499359317" duration="4000" />
+      <workItem from="1670499492808" duration="10000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
