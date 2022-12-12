@@ -2,6 +2,7 @@ package book_management.controller;
 
 import book_management.service.BookService;
 
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class BookController {
@@ -34,9 +35,9 @@ public class BookController {
                     break;
                 }
                 case 3: {
-                    System.out.print("Nhập năm sản xuất: ");
-                    int yearOfManufacture = Integer.parseInt(sc.nextLine());
-                    bookService.findByYear(yearOfManufacture);
+                    System.out.println("Sách được sản xuất trong năm nay là: ");
+                    LocalDate yearOfManufacture = LocalDate.now();
+                    bookService.findByYear(yearOfManufacture.getYear());
                     break;
                 }
                 case 4: {
@@ -54,7 +55,7 @@ public class BookController {
         System.out.println("\n********* MENU *********");
         System.out.println("1 - Tìm kiếm theo tên");
         System.out.println("2 - Tìm kiếm theo thể loại");
-        System.out.println("3 - Tìm kiếm theo năm sản xuất");
+        System.out.println("3 - Tìm kiếm sách được sản xuất trong năm nay");
         System.out.println("4 - Thoát\n");
     }
 }
