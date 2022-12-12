@@ -1,3 +1,5 @@
+package homeWork_05;
+
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
