@@ -6,7 +6,8 @@ import java.time.LocalDate;
 import java.util.Scanner;
 
 public class BookController {
-    // 4. Tạo ra cái menu để người dùng chọn
+    // 1. controller
+    // 5. Tạo ra cái menu để người dùng chọn
     // Khởi tạo đối tượng thì mới gọi được findByTitle để xử lý
     public BookService bookService = new BookService();
     public void run() {

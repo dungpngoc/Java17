@@ -6,9 +6,10 @@ import book_management.repository.BookRepository;
 
 import java.time.LocalDate;
 
-// 3b.
-// Sử lý những logic trong ứng dụng này ( Tìm kiếm sách theo tên...)--> Phải tạo ra dữ liệu của nó ( Tạo BookRepository)
 public class BookService {
+    // 2. service
+    // 4
+    // Sử lý những logic trong ứng dụng này ( Tìm kiếm sách theo tên...)
     public BookRepository bookRepository = new BookRepository();
 
     public void findByTitle(String title) {
@@ -27,7 +28,7 @@ public class BookService {
 
     public void findByCategory(String category) {
         int count = 0;
-        for (Book book: bookRepository.findAllCatagory()) {
+        for (Book book: bookRepository.findAllCategory()) {
             if (book.category.toLowerCase().contains(category.toLowerCase())) {
                 System.out.println(book);
                 count++;

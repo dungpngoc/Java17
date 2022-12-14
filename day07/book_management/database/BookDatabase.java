@@ -8,7 +8,8 @@ import java.time.LocalDateTime;
 // 2.
 // Chứa dữ liệu( Chứa những cuốn sách của mình)
 public class BookDatabase {
-
+    // 4. database
+    // 2. Tạo database để chứa dữ liệu( Chứa những cuốn sách của mình)
     public static Book[] books = {
             new Book(1,"Người khốn khổ"),
             new Book(2,"Dế mèn phiêu lưu ký"),

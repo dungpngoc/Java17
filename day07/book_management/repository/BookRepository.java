@@ -4,13 +4,14 @@ package book_management.repository;
 import book_management.database.BookDatabase;
 import book_management.model.Book;
 
-// 3a
 public class BookRepository {
+    // 3 repository
+    // 3 Chứa các phương thức để lấy dữ liệu từ database
     public Book[] fildAll() {
         return BookDatabase.books;
     }
 
-    public Book[] findAllCatagory() {
+    public Book[] findAllCategory() {
         return BookDatabase.getBooks;
     }
 
