@@ -35,8 +35,8 @@ public class Serial extends Film {
         return "Film{" +
                 " id = " + getId() +
                 ", title= '" + getTitle() + '\'' +
-                ", category ='" + getCategory() + '\'' +
-                ", director ='" + getDirector() + '\'' +
+                ", category = '" + getCategory() + '\'' +
+                ", director = '" + getDirector() + '\'' +
                 ", premiereDate = " + getPremiereDate() +
                 ", episodes = " + episodes +
                 ", avgDuration = " + avgDuration +

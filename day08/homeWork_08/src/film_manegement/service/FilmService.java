@@ -11,6 +11,7 @@ public class FilmService {
     // Tạo đối tượng để lấy phương thức ở lớp repository
     FilmRepository filmRepository = new FilmRepository();
 
+
     public void findBytitle(String title) {
         int count = 0;
         for (Serial film:filmRepository.filmsInfo()) {

@@ -15,8 +15,19 @@
       <sourceFolder url="file://$MODULE_DIR$/day07/homeWord_07/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/day07/homeWork_06/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/day08/homeWork_08/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day09/homeWork_09/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day09/lesson_09/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/lombok-1.18.22.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

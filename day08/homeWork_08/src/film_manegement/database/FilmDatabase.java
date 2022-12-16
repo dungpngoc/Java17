@@ -6,7 +6,8 @@ import film_manegement.model.Serial;
 
 public class FilmDatabase {
     // 2. Tạo database chứa dữ liệu film
-
+    // Tạo lớp chứa các đối tượng có các thuộc tính theo như đề bài
+    
     public static Film[] film = {
             new Film(1,"Thương ngày nắng về","Tình cảm, gia đình","Bùi Tiến Huy","15/11/2021"),
             new Film(2,"Chồng cũ, vợ cũ, người yêu cũ","Tình yêu đôi lứa, gia đình","Vũ Minh Trí","22/04/2022"),
