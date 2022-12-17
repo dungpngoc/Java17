@@ -5,6 +5,7 @@ import empoylee_management.database.EmpoyleeDB;
 import empoylee_management.model.Empoylee;
 import empoylee_management.repository.EmpoyleeRepository;
 
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class EmpoyleeService {
@@ -66,17 +67,12 @@ public class EmpoyleeService {
 
     // 5. Tìm id và xoá
     public void deleteById(int id) {
-        int count = 0;
-        for (Empoylee deleteInfo: empoyleeRepository.findIdDelete()) {
-            if (deleteInfo.getId() == id) {
-                EmpoyleeDB.empoylees.remove(deleteInfo);
-                System.out.println("Danh sách nhân viên sau khi xoá");
-                System.out.println(EmpoyleeDB.empoylees);
-                count++;
+        for (int i = 0; i < empoyleeRepository.findIdDelete().size(); i++) {
+            if (empoyleeRepository.findIdDelete().get(i).getId() == id) {
+                EmpoyleeDB.empoylees.remove(empoyleeRepository.findIdDelete().get(i));
+                System.out.println("Đã xoá thành công nhân viên có id:" +id);
+                break;
             }
-        }
-        if (count == 0) {
-            System.out.println("Không có id nào giống với id là: " + id);
         }
     }
 

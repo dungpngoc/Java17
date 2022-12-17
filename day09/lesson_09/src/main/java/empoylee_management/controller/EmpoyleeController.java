@@ -51,7 +51,8 @@ public class EmpoyleeController {
                     break;
                 }
                 case 6: {
-                    System.out.printf("Nhân viên có mức lương từ %d, đến %d là:",5_000_000,10_000_000);
+                    System.out.printf("Nhân viên có mức lương từ %d đến %d là:",5_000_000,10_000_000);
+                    System.out.println();
                     empoyleeService.findBySalary(5_000_000,10_000_000);
                     break;
                 }
