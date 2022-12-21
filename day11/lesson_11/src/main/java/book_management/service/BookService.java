@@ -8,14 +8,9 @@ import java.util.List;
 import java.util.Scanner;
 
 public class BookService {
+    BookRepository bookRepository = new BookRepository();
     Scanner sc = new Scanner(System.in);
-    List<Book> book = BookRepository.getObjectFromJsonFile("list-book.json");
-    public void printInfo() {
-        System.out.println("Thông tin tất cả các cuốn sách:");
-        for (Book book1: book) {
-            System.out.println(book1);
-        }
-    }
+    List<Book> book = bookRepository.getObjectFromJsonFile("list-book.json");
 
     public void findByName() {
         System.out.print("Nhập tên sách: ");
@@ -30,6 +25,7 @@ public class BookService {
         }
         if (count == 0) {
             System.out.printf("Không tìm thấy sách nào có title %s",title);
+            System.out.println();
         }
     }
 

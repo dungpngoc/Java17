@@ -21,6 +21,13 @@ import java.util.List;
 public class BookRepository {
 
     // Lấy dữ liệu từ file json binding vào class để in ra
+    List<Book> book = getObjectFromJsonFile("list-book.json");
+    public void printInfo() {
+        System.out.println("Thông tin tất cả các cuốn sách:");
+        for (Book book1: book) {
+            System.out.println(book1);
+        }
+    }
     public static List<Book> getObjectFromJsonFile(String fileName) {
         try {
             // Tạo đối tượng json
@@ -41,7 +48,5 @@ public class BookRepository {
 
         return null;
     }
-
-
 
 }

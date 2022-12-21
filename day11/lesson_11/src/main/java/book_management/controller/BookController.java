@@ -1,5 +1,6 @@
 package book_management.controller;
 
+import book_management.repository.BookRepository;
 import book_management.service.BookService;
 
 import java.util.Scanner;
@@ -10,7 +11,7 @@ import java.util.Scanner;
 //Sắp xếp sách theo năm xuất bản
 public class BookController {
     BookService bookService = new BookService();
-
+    BookRepository bookRepository = new BookRepository();
     public void run() {
         int option = 0;
         boolean isQuit = false;
@@ -21,7 +22,7 @@ public class BookController {
             option = Integer.parseInt(sc.nextLine());
             switch (option) {
                 case 1: {
-                    bookService.printInfo();
+                    bookRepository.printInfo();
                     break;
                 }
                 case 2: {

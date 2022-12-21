@@ -114,6 +114,7 @@ public class FileJson {
         return null;
     }
 
+    // 3. Thêm data đối tượng vào file
     public static void convertObjectToJsonFile(String fileName, Object obj) {
         try {
             // Tạo đối tượng gson
