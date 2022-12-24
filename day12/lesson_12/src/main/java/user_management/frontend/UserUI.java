@@ -6,7 +6,6 @@ import user_management.backend.request.UserRegister;
 import user_management.backend.user.User;
 import user_management.backend.utils.FileUtils;
 
-import java.util.List;
 import java.util.Scanner;
 
 public class UserUI {
@@ -14,11 +13,11 @@ public class UserUI {
     private final FileUtils fileUtils = new FileUtils();
 
     public void run() {
-        int option = 0;
         boolean isQuit = false;
         Scanner sc = new Scanner(System.in);
         while (!isQuit) {
             showMenu();
+            int option = 0;
             try {
                 System.out.print("Nhập lựa chọn : ");
                 option = Integer.parseInt(sc.nextLine());
@@ -52,7 +51,7 @@ public class UserUI {
                     if (7 <= password.length() && password.length() <= 15) {
                         System.out.print("Nhập email : ");
                         String email = sc.nextLine();
-                        if (fileUtils.checkEmail(email) == true && userController.checkEmailDB(email) == true) {
+                        if (fileUtils.checkEmail(email) == true && UserController.checkEmailDB(email) == true) {
                             try {
                                 UserRegister register = new UserRegister(username,password,email);
                                 userController.userRegister(register);
@@ -70,6 +69,31 @@ public class UserUI {
                         System.out.println("Password phải từ 7 đến 15 ký tự");
                     }
                     break;
+                }
+                case 3: {
+                    System.out.print("Nhập email để đổi password : ");
+                    String email = sc.nextLine();
+                    if (userController.checkEmailDB(email) == false) {
+                        System.out.print("Nhập mật khẩu mới : ");
+                        String newPassword = sc.nextLine();
+                        if (7 < newPassword.length() && newPassword.length() < 15) {
+                            userController.getEmail(email,newPassword);
+                            break;
+                        } else {
+                            System.out.println("Password phải từ 7 đến 15 ký tự");
+                        }
+                    } else {
+                        System.out.println("Không tìm thấy Email " + email);
+                    }
+                    break;
+                }
+                case 4: {
+                    System.out.println("Thoát");
+                    isQuit = true;
+                    break;
+                }
+                default: {
+                    System.out.println("Lựa chọn không hợp lệ");
                 }
             }
         }

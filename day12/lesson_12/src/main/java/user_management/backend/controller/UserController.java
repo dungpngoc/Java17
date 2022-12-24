@@ -3,7 +3,6 @@ package user_management.backend.controller;
 import user_management.backend.request.UserRegister;
 import user_management.backend.service.UserService;
 import user_management.backend.user.User;
-import user_management.backend.utils.FileUtils;
 
 
 public class UserController {
@@ -19,5 +18,9 @@ public class UserController {
 
     public static boolean checkEmailDB(String email) {
        return UserService.checkEmailDB(email);
+    }
+
+    public void getEmail(String email, String newPassword) {
+        userService.getEmail(email,newPassword);
     }
 }

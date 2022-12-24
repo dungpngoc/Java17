@@ -2,17 +2,21 @@ package user_management.backend.repository;
 
 import user_management.backend.controller.UserController;
 import user_management.backend.database.UserDatabase;
-import user_management.backend.exception.NotFoundException;
 import user_management.backend.user.User;
 import user_management.backend.utils.FileUtils;
+import user_management.frontend.UserUI;
+
+
 import java.util.Scanner;
 
 
 public class UserRepository {
     FileUtils fileUtils = new FileUtils();
 
+
     Scanner sc = new Scanner(System.in);
-    public User findByData(String email, String password) {
+    public void findByData(String email, String password) {
+        int count = 0;
         for (int i = 0; i < UserDatabase.users.size(); i++) {
             if (UserDatabase.users.get(i).getEmail().contains(email) && UserDatabase.users.get(i).getPassword().contains(password)) {
                 System.out.println("Chúc mừng " + UserDatabase.users.get(i).getUsername() + ", bạn có thể thực hiện các công việc sau: ");
@@ -75,9 +79,12 @@ public class UserRepository {
                         }
                     }
                 }
+                count++;
             }
         }
-        throw new NotFoundException("Sai Email hoặc Password ");
+        if (count == 0) {
+            System.out.println("Chưa tồn tại tài khoản");
+        }
     }
 
     // Tìm email có tồn tại trong list ko
@@ -104,4 +111,13 @@ public class UserRepository {
     }
 
 
+    public void savePassword(String email, String newPassword) {
+        for (int i = 0; i < UserDatabase.users.size(); i++) {
+            if (UserDatabase.users.get(i).getEmail().equals(email)) {
+                UserDatabase.users.get(i).setPassword(newPassword);
+            }
+        }
+        System.out.println("Thay đổi password thành công");
+        FileUtils.setDataToFile("list-user.json",UserDatabase.users);
+    }
 }
