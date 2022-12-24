@@ -1,10 +1,10 @@
 package book_management;
 
-import book_management.controller.BookController;
+import book_management.frontend.BookUI;
 
 public class Main {
     public static void main(String[] args) {
-        BookController bookController = new BookController();
-        bookController.run();
+        BookUI bookUI = new BookUI();
+        bookUI.run();
     }
 }

@@ -15,7 +15,7 @@ public class ThrowAndThrowsDemo {
 
         try {
             getFile();
-        } catch (FileNotFoundException e) {
+        } catch (Exception e) {
             System.out.println(e.getMessage());
         }
     }

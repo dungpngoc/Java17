@@ -4,7 +4,7 @@ public class Test {
     public static void main(String[] args) {
         int[] numbers = {1,2,3,4,5};
         try {
-            System.out.println(findIndexElement(numbers,4));
+            System.out.println(findIndexElement(numbers,6));
             System.out.println(findIndexElement(numbers,10));
         } catch (NotFoundException e) {
             System.out.println(e.getMessage());
