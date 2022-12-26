@@ -5,21 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="833fc0ef-05bb-471b-863d-23fc7e79556b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/day12.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_google_code_gson_gson_2_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__commons_digester_commons_digester_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__commons_validator_commons_validator_1_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_projectlombok_lombok_1_18_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_12.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/Java17.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/Java17.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../day0012/book.management/.idea/compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../day0012/book.management/.idea/encodings.xml" beforeDir="false" />
@@ -70,39 +55,7 @@
       <change beforePath="$PROJECT_DIR$/../../day10/lesson_10/src/main/java/upcasting_demo/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day10/lesson_10/src/main/java/upcasting_demo/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../day10/lesson_10/src/main/java/upcasting_demo/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day10/lesson_10/src/main/java/upcasting_demo/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../day11/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../day11/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/list-user.json" beforeDir="false" afterPath="$PROJECT_DIR$/list-user.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book_management/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/book_management/backend/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book_management/backend/model/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/checkmai.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user_management/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user_management/backend/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user_management/backend/database/UserDatabase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user_management/backend/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user_management/backend/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user_management/backend/request/UpdateUserName.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user_management/backend/request/UpdateUserPassword.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user_management/backend/request/UserRegister.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user_management/backend/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user_management/backend/user/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user_management/backend/utils/FileUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user_management/frontend/UserUI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/checkmai.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/user_management/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/user_management/backend/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/user_management/backend/database/UserDatabase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/user_management/backend/exception/NotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/user_management/backend/repository/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/user_management/backend/request/UpdateUserName.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/user_management/backend/request/UpdateUserPassword.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/user_management/backend/request/UserRegister.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/user_management/backend/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/user_management/backend/user/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/user_management/backend/utils/FileUtils$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/user_management/backend/utils/FileUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/user_management/frontend/UserUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,6 +159,7 @@
       <workItem from="1672063009602" duration="335000" />
       <workItem from="1672063435723" duration="1013000" />
       <workItem from="1672064881905" duration="59000" />
+      <workItem from="1672065340892" duration="127000" />
     </task>
     <servers />
   </component>
