@@ -4,9 +4,6 @@ import user_management.backend.controller.UserController;
 import user_management.backend.database.UserDatabase;
 import user_management.backend.user.User;
 import user_management.backend.utils.FileUtils;
-import user_management.frontend.UserUI;
-
-
 import java.util.Scanner;
 
 

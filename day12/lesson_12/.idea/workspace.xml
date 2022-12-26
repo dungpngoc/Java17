@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="833fc0ef-05bb-471b-863d-23fc7e79556b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/user_management/backend/request/UpdateUserPassword.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/Java17.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/Java17.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../day05/homeWork_05/minitest06.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day05/homeWork_05/minitest06.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../day07/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../day07/.idea/workspace.xml" afterDir="false" />
@@ -45,45 +44,8 @@
       <change beforePath="$PROJECT_DIR$/../../day10/lesson_10/src/main/java/upcasting_demo/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day10/lesson_10/src/main/java/upcasting_demo/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../day10/lesson_10/src/main/java/upcasting_demo/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day10/lesson_10/src/main/java/upcasting_demo/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../day11/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../day11/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day11/lesson_11/list-book.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../day11/lesson_11/list-book.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/a.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/book_management/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/book_management/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/book_management/backend/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/book_management/backend/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/book_management/backend/database/BookDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/book_management/backend/database/BookDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/book_management/backend/exception/NotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/book_management/backend/exception/NotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/book_management/backend/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/book_management/backend/model/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/book_management/backend/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/book_management/backend/repository/BookRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/book_management/backend/request/UpdateBookRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/book_management/backend/request/UpdateBookRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/book_management/backend/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/book_management/backend/service/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/book_management/backend/utils/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/book_management/backend/utils/FileUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/book_management/frontend/BookUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/book_management/frontend/BookUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/custom_exception/NotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/custom_exception/NotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/custom_exception/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/custom_exception/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/exception_demo/HandleException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/exception_demo/HandleException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/exception_demo/ThrowAndThrowsDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/exception_demo/ThrowAndThrowsDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/exception_demo/UncheckedExceptionDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day11/lesson_11/src/main/java/exception_demo/UncheckedExceptionDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day11/lesson_11/target/classes/book_management/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../day11/lesson_11/target/classes/book_management/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day11/lesson_11/target/classes/book_management/controller/BookController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day11/lesson_11/target/classes/book_management/model/Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day11/lesson_11/target/classes/book_management/repository/BookRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day11/lesson_11/target/classes/book_management/service/BookService$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day11/lesson_11/target/classes/book_management/service/BookService$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day11/lesson_11/target/classes/book_management/service/BookService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day11/lesson_11/target/classes/custom_exception/NotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../day11/lesson_11/target/classes/custom_exception/NotFoundException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day11/lesson_11/target/classes/custom_exception/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../day11/lesson_11/target/classes/custom_exception/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day11/lesson_11/target/classes/exception_demo/HandleException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../day11/lesson_11/target/classes/exception_demo/HandleException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day11/lesson_11/target/classes/exception_demo/ThrowAndThrowsDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../day11/lesson_11/target/classes/exception_demo/ThrowAndThrowsDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day11/lesson_11/target/classes/exception_demo/UncheckedExceptionDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../day11/lesson_11/target/classes/exception_demo/UncheckedExceptionDemo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/list-user.json" beforeDir="false" afterPath="$PROJECT_DIR$/list-user.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user_management/backend/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user_management/backend/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/user_management/backend/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user_management/backend/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user_management/backend/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user_management/backend/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user_management/frontend/UserUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user_management/frontend/UserUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/user_management/backend/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/user_management/backend/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/user_management/backend/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/user_management/backend/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/user_management/backend/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/user_management/backend/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/user_management/frontend/UserUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/user_management/frontend/UserUI.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +104,13 @@
       <workItem from="1671805269455" duration="1630000" />
       <workItem from="1671807479137" duration="1698000" />
       <workItem from="1671809199721" duration="11073000" />
-      <workItem from="1671862446398" duration="6742000" />
+      <workItem from="1671862446398" duration="7035000" />
+      <workItem from="1671869897673" duration="1449000" />
+      <workItem from="1671872883677" duration="848000" />
+      <workItem from="1671876517315" duration="1024000" />
+      <workItem from="1671877861388" duration="22000" />
+      <workItem from="1671892854389" duration="2473000" />
+      <workItem from="1671901337957" duration="1043000" />
     </task>
     <servers />
   </component>
