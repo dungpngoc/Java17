@@ -11,12 +11,12 @@
       <change beforePath="$PROJECT_DIR$/../../day0012/book.management/.idea/jarRepositories.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../day0012/book.management/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../day0012/book.management/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day0012/lesson_12/src/main/java/user_management/backend/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day0012/lesson_12/src/main/java/user_management/backend/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day0012/lesson_12/src/main/java/user_management/backend/database/UserDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day0012/lesson_12/src/main/java/user_management/backend/database/UserDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day0012/lesson_12/src/main/java/user_management/backend/exception/NotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day0012/lesson_12/src/main/java/user_management/backend/exception/NotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day0012/lesson_12/src/main/java/user_management/backend/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day0012/lesson_12/src/main/java/user_management/backend/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day0012/lesson_12/src/main/java/user_management/backend/request/UserRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day0012/lesson_12/src/main/java/user_management/backend/request/UserRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day0012/lesson_12/src/main/java/user_management/backend/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day0012/lesson_12/src/main/java/user_management/backend/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day0012/lesson_12/src/main/java/user_management/backend/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day0012/lesson_12/src/main/java/user_management/backend/database/UserDB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day0012/lesson_12/src/main/java/user_management/backend/exception/NotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day0012/lesson_12/src/main/java/user_management/backend/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day0012/lesson_12/src/main/java/user_management/backend/request/UserRegister.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day0012/lesson_12/src/main/java/user_management/backend/service/UserService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../day05/homeWork_05/minitest06.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day05/homeWork_05/minitest06.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../day07/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../day07/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../day08/homeWork_08/src/film_manegement/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day08/homeWork_08/src/film_manegement/Test.java" afterDir="false" />
@@ -55,7 +55,7 @@
       <change beforePath="$PROJECT_DIR$/../../day10/lesson_10/src/main/java/upcasting_demo/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day10/lesson_10/src/main/java/upcasting_demo/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../day10/lesson_10/src/main/java/upcasting_demo/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day10/lesson_10/src/main/java/upcasting_demo/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../day11/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../day11/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,26 +89,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Intelliji/Java17/day0012/lesson_12&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Intelliji/Java17/day12/lesson_12",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="user_management.Test" />
@@ -160,6 +160,7 @@
       <workItem from="1672063435723" duration="1013000" />
       <workItem from="1672064881905" duration="59000" />
       <workItem from="1672065340892" duration="127000" />
+      <workItem from="1672066095973" duration="301000" />
     </task>
     <servers />
   </component>

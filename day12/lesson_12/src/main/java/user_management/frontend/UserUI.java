@@ -89,7 +89,7 @@ public class UserUI {
                                     break;
                                 }
                                 case 5: {
-                                    System.out.println("Exit, Goodbye see you again");
+                                    System.out.println("Exit, Goodbye see you again !!!");
                                     isQuitTwo = true;
                                     isQuit = true;
                                     break;
@@ -146,6 +146,11 @@ public class UserUI {
                     } else if (userController.checkEmailDB(email) == true) {
                         System.out.println("Tài khoản chưa tồn tại");
                     }
+                    break;
+                }
+                case 4: {
+                    System.out.println("Exit, Goodbye see you again !!!");
+                    isQuit = true;
                     break;
                 }
             }
