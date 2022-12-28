@@ -1,5 +1,6 @@
 package empoylee_management.controller;
 
+import empoylee_management.model.Empoylee;
 import empoylee_management.repository.EmpoyleeRepository;
 import empoylee_management.service.EmpoyleeService;
 
@@ -35,25 +36,27 @@ public class EmpoyleeController {
                 case 3: {
                     System.out.print("Nhập tên nhân viên cần tìm:");
                     String name = sc.nextLine();
-                    empoyleeService.findByName(name);
+                    System.out.println(empoyleeRepository.findByNameContainsIgnoreCase(name));
                     break;
                 }
                 case 4: {
                     System.out.print("Nhập id cần tìm:");
                     int id = Integer.parseInt(sc.nextLine());
-                    empoyleeService.findById(id);
+                    System.out.println(empoyleeRepository.findById(id));
                     break;
                 }
                 case 5: {
                     System.out.print("Nhập id cần xoá: ");
                     int id = Integer.parseInt(sc.nextLine());
-                    empoyleeService.deleteById(id);
+                    empoyleeRepository.deleteById(id);
                     break;
                 }
                 case 6: {
                     System.out.printf("Nhân viên có mức lương từ %d đến %d là:",5_000_000,10_000_000);
                     System.out.println();
-                    empoyleeService.findBySalary(5_000_000,10_000_000);
+                    for (Empoylee empoylee: empoyleeRepository.findBySalary(5_000_000,10_000_000)) {
+                        System.out.println(empoylee);
+                    }
                     break;
                 }
                 case 7: {
