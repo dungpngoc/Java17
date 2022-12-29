@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="233fab32-52e2-4627-a752-3ed55b5ae3cd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/Java17.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/Java17.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_14/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_14/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_14/src/main/java/collection_demo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_14/src/main/java/collection_demo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_14/src/main/java/collection_demo/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_14/src/main/java/collection_demo/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_14/src/main/java/fptproduct_management/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_14/src/main/java/fptproduct_management/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_14/src/main/java/fptproduct_management/backend/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_14/src/main/java/fptproduct_management/backend/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_14/src/main/java/fptproduct_management/backend/database/ProductDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_14/src/main/java/fptproduct_management/backend/database/ProductDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_14/src/main/java/fptproduct_management/backend/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_14/src/main/java/fptproduct_management/backend/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_14/src/main/java/fptproduct_management/backend/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_14/src/main/java/fptproduct_management/backend/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_14/src/main/java/fptproduct_management/backend/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_14/src/main/java/fptproduct_management/backend/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_14/src/main/java/fptproduct_management/frontend/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_14/src/main/java/fptproduct_management/frontend/Display.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_14/src/main/java/functional_interface_build_in/ConsumerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_14/src/main/java/functional_interface_build_in/ConsumerDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_14/src/main/java/functional_interface_build_in/PredicateDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_14/src/main/java/functional_interface_build_in/PredicateDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_14/src/main/java/functional_interface_demo/Greeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_14/src/main/java/functional_interface_demo/Greeting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_14/src/main/java/functional_interface_demo/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_14/src/main/java/functional_interface_demo/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_14/src/main/java/method_reference/IStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_14/src/main/java/method_reference/IStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_14/src/main/java/method_reference/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_14/src/main/java/method_reference/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day05/homeWork_05/minitest06.java" beforeDir="false" afterPath="$PROJECT_DIR$/../day05/homeWork_05/minitest06.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day07/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day07/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day08/homeWork_08/src/film_manegement/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../day08/homeWork_08/src/film_manegement/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day09/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day09/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day09/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day09/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day11/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day11/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day12/lesson_12/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day12/lesson_12/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2JYJtQ4AEusabZclr4nlryv6SOh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Intelliji/Java17/day0012/lesson_14"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="233fab32-52e2-4627-a752-3ed55b5ae3cd" name="Changes" comment="" />
+      <created>1672249296849</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672249296849</updated>
+      <workItem from="1672249298060" duration="26000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
