@@ -1,0 +1,32 @@
+[
+  {
+    "username": "dungpham",
+    "password": "12345678",
+    "email": "dungpngoc@gmail.com",
+    "phoneNumber": "0966022688",
+    "province": "Bắc Giang",
+    "district": "TP Bắc Giang",
+    "ward": "Minh Khai",
+    "detail": "291"
+  },
+  {
+    "username": "Phạm Ngọc Dũng",
+    "password": "0966022688",
+    "email": "dungpham@gmail.com",
+    "phoneNumber": "0966022688",
+    "province": "Bắc Giang",
+    "district": "TP Bắc Giang",
+    "ward": "Minh Khai",
+    "detail": "291"
+  },
+  {
+    "username": "pham ngoc dung",
+    "password": "12345678",
+    "email": "dung@gmail.com",
+    "phoneNumber": "0966022688",
+    "province": "Bắc Giang",
+    "district": "TP Bắc Giang",
+    "ward": "Minh Khai",
+    "detail": "291"
+  }
+]
