@@ -12,6 +12,6 @@ import lombok.Setter;
 public class Address {
     private String province;
     private String district;
-    private String ward;
-    private String detail;
+    private String street;
+    private int houseNumber;
 }

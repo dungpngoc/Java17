@@ -1,8 +1,15 @@
 package TGDDproduct_management.backend.model;
 
-import java.util.List;
+import lombok.*;
 
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@ToString
 public class Cart {
-    private List<CartItem> cartItems;
-    private int total;
+    private String email;
+    private int productId;
+    private String productName;
+    private int productQuantity;
 }

@@ -1,7 +1,7 @@
 package TGDDproduct_management.backend.service;
-
 import TGDDproduct_management.backend.database.UserDB;
 import TGDDproduct_management.backend.exception.NotFoundException;
+import TGDDproduct_management.backend.model.Address;
 import TGDDproduct_management.backend.model.User;
 import TGDDproduct_management.backend.repository.UserRepository;
 import TGDDproduct_management.backend.request.UserRegister;
@@ -11,6 +11,7 @@ import java.util.regex.Pattern;
 
 public class UserService {
     private final UserRepository userRepository = new UserRepository();
+
     public List<User> getUser() {
         return userRepository.findAllUser();
     }
@@ -77,5 +78,18 @@ public class UserService {
             }
         }
         throw new NotFoundException("Email hoặc mật khẩu không chính xác");
+    }
+
+    public User getUserByEmail(String email) {
+        for (User user: UserDB.users) {
+            if (user.getEmail().equals(email)) {
+                return user;
+            }
+        }
+        throw new NotFoundException("Không tìm thấy Email");
+    }
+
+    public void updateInfo(String email, Address address) {
+        userRepository.updateInfo(email,address);
     }
 }

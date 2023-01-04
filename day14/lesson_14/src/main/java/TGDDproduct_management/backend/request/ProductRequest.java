@@ -10,7 +10,6 @@ import lombok.Setter;
 @Getter
 @Setter
 public class ProductRequest {
-    public int id;
-    public int quantity;
-
+    private int productCode;
+    private int quantity;
 }

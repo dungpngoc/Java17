@@ -1,5 +1,6 @@
 package TGDDproduct_management.backend.utils;
 
+import TGDDproduct_management.backend.model.Cart;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
@@ -70,5 +71,20 @@ public class FileUtils {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+
+    public static ArrayList<Cart> getDataCartFromFile(String fileName) {
+        try {
+            Gson gson = new Gson();
+            Reader reader = Files.newBufferedReader(Paths.get(fileName));
+            Type type = new TypeToken<ArrayList<Cart>>(){}.getType();
+            ArrayList<Cart> carts = gson.fromJson(reader, type);
+            reader.close();
+            return carts;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }

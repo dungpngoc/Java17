@@ -4,29 +4,47 @@
     "password": "12345678",
     "email": "dungpngoc@gmail.com",
     "phoneNumber": "0966022688",
-    "province": "Bắc Giang",
-    "district": "TP Bắc Giang",
-    "ward": "Minh Khai",
-    "detail": "291"
+    "address": {
+      "province": "Tuyên Quang",
+      "district": "Mỹ Đình",
+      "street": "Phạm Văn Đồng",
+      "houseNumber": 15
+    }
   },
   {
     "username": "Phạm Ngọc Dũng",
     "password": "0966022688",
     "email": "dungpham@gmail.com",
     "phoneNumber": "0966022688",
-    "province": "Bắc Giang",
-    "district": "TP Bắc Giang",
-    "ward": "Minh Khai",
-    "detail": "291"
+    "address": {
+      "province": "Thanh Hoá",
+      "district": "Cầu Giấy",
+      "street": "Hai Bà Trưng",
+      "houseNumber": 2
+    }
   },
   {
     "username": "pham ngoc dung",
     "password": "12345678",
     "email": "dung@gmail.com",
     "phoneNumber": "0966022688",
-    "province": "Bắc Giang",
-    "district": "TP Bắc Giang",
-    "ward": "Minh Khai",
-    "detail": "291"
+    "address": {
+      "province": "Bắc Ninh",
+      "district": "Hà Bắc",
+      "street": "Văn Cao",
+      "houseNumber": 19
+    }
+  },
+  {
+    "username": "phạm ngọc dũng",
+    "password": "12345678",
+    "email": "dungg@gmail.com",
+    "phoneNumber": "0966022688",
+    "address": {
+      "province": "Bắc Giang",
+      "district": "Dĩnh Kế",
+      "street": "Minh Khai",
+      "houseNumber": 291
+    }
   }
 ]

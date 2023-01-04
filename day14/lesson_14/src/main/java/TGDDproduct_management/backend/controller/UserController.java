@@ -1,5 +1,6 @@
 package TGDDproduct_management.backend.controller;
 
+import TGDDproduct_management.backend.model.Address;
 import TGDDproduct_management.backend.model.User;
 import TGDDproduct_management.backend.request.UserRegister;
 import TGDDproduct_management.backend.service.UserService;
@@ -35,4 +36,7 @@ public class UserController {
         userService.checkLogin(email,password);
     }
 
+    public void updateInfo(String email, Address address) {
+        userService.updateInfo(email,address);
+    }
 }

@@ -1,7 +1,10 @@
 package TGDDproduct_management.backend.repository;
 
+import TGDDproduct_management.backend.database.CartDB;
 import TGDDproduct_management.backend.database.ProductDB;
+import TGDDproduct_management.backend.model.Cart;
 import TGDDproduct_management.backend.model.Product;
+import TGDDproduct_management.backend.utils.FileUtils;
 
 import java.util.List;
 
@@ -14,4 +17,8 @@ public class ProductRepository {
         return ProductDB.products;
     }
 
+    public void cartSave(Cart cart) {
+        CartDB.carts.add(cart);
+        FileUtils.setDataToFile("cart.json", CartDB.carts);
+    }
 }
