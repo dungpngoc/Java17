@@ -10,17 +10,5 @@
     "productId": 19,
     "productName": "Dell Inspiron 3505",
     "productQuantity": 3
-  },
-  {
-    "email": "pnd2@gmail.com",
-    "productId": 20,
-    "productName": "Dell Latitude 9420",
-    "productQuantity": 2
-  },
-  {
-    "email": "pnd2@gmail.com",
-    "productId": 20,
-    "productName": "Dell Latitude 9420",
-    "productQuantity": 3
   }
 ]

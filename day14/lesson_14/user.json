@@ -70,5 +70,17 @@
       "street": "Minh Khai",
       "houseNumber": 291
     }
+  },
+  {
+    "username": "PHAM NGOC DUNG",
+    "password": "12345678",
+    "email": "dungham12@gmail.com",
+    "phoneNumber": "0966022688",
+    "address": {
+      "province": "Bắc Giang",
+      "district": "Dĩnh Kế",
+      "street": "Minh Khai",
+      "houseNumber": 291
+    }
   }
 ]

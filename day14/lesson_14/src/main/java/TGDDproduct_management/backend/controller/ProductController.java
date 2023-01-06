@@ -12,11 +12,6 @@ public class ProductController {
         productService.showProduct();
     }
 
-
-    public Cart cart(String email, ProductRequest productRequest) {
-        return productService.cart(email,productRequest);
-    }
-
     public void showCart(String email) {
         productService.showCart(email);
     }
@@ -47,5 +42,17 @@ public class ProductController {
 
     public void updatePrice(int productCode, int newPrice) {
         productService.updatePrice(productCode,newPrice);
+    }
+
+    public boolean checkDataCart(String email) {
+        return productService.checkDataCart(email);
+    }
+
+    public void cart(String email,int productCode, int quantity ) {
+        productService.cart(email,productCode,quantity);
+    }
+
+    public void cart1(String email, int productCode, int quantity) {
+        productService.cart1(email,productCode,quantity);
     }
 }

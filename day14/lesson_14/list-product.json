@@ -150,5 +150,13 @@
     "price": 10990000,
     "brand": "Dell",
     "categories": "Laptop"
+  },
+  {
+    "productCode": 20,
+    "productName": "Dell XPS 9550",
+    "description": "Window",
+    "price": 35900000,
+    "brand": "Dell",
+    "categories": "Laptop"
   }
 ]

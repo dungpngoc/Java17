@@ -1,6 +1,4 @@
 package TGDDproduct_management;
-import TGDDproduct_management.backend.database.ProductDB;
-import TGDDproduct_management.backend.utils.FileUtils;
 import TGDDproduct_management.frontend.Display;
 
 

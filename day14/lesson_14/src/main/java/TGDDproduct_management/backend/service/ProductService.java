@@ -20,46 +20,6 @@ public class ProductService {
         productRepository.findAll();
     }
 
-
-    public Cart cart(String email, ProductRequest productRequest) {
-        for (int i = 0; i < CartDB.carts.size(); i++) {
-            if (CartDB.carts.get(i).getEmail().equals(email) && CartDB.carts.get(i).getProductId() == productRequest.getProductCode()) {
-                int setQuantity = productRequest.getQuantity() + CartDB.carts.get(i).getProductQuantity();
-                CartDB.carts.get(i).setProductQuantity(setQuantity);
-                FileUtils.setDataToFile("cart.json", CartDB.carts);
-                System.out.println("Đã cho vào giỏ hàng, hãy chọn thêm sản phẩm");
-                return CartDB.carts.get(i);
-            } else if (CartDB.carts.get(i).getEmail().equals(email) && CartDB.carts.get(i).getProductId() != productRequest.getProductCode()) {
-                for (Product product: ProductDB.products) {
-                    Cart cart = new Cart();
-                    if (productRequest.getProductCode() == product.getProductCode()) {
-                        cart.setEmail(email);
-                        cart.setProductId(productRequest.getProductCode());
-                        cart.setProductName(product.getProductName());
-                        cart.setProductQuantity(productRequest.getQuantity());
-                        productRepository.cartSave(cart);
-                        System.out.println("Đã cho vào giỏ hàng, hãy chọn thêm sản phẩm");
-                        return cart;
-                    }
-                }
-            } else if (CartDB.carts.get(i).getEmail() != email) {
-                for (Product product: ProductDB.products) {
-                    Cart cart = new Cart();
-                    if (productRequest.getProductCode() == product.getProductCode()) {
-                        cart.setEmail(email);
-                        cart.setProductId(productRequest.getProductCode());
-                        cart.setProductName(product.getProductName());
-                        cart.setProductQuantity(productRequest.getQuantity());
-                        productRepository.cartSave(cart);
-                        System.out.println("Đã cho vào giỏ hàng, hãy chọn thêm sản phẩm");
-                        return cart;
-                    }
-                }
-            }
-        }
-        throw new NotFoundException("Không tìm thấy sản phẩm có id " + productRequest.getProductCode());
-    }
-
     public void showCart(String email) {
         int count = 0;
         for (Cart cart: CartDB.carts) {
@@ -148,5 +108,63 @@ public class ProductService {
             }
         }
         throw new NotFoundException("Không tìm thấy mã sản phẩm " + productCode);
+    }
+
+    public boolean checkDataCart(String email) {
+        for (Cart cart: CartDB.carts) {
+            if (cart.getEmail().equals(email)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public void cart(String email, int productCode, int quantity) {
+        Cart cart = new Cart();
+        int count = 0;
+        for (Product product: ProductDB.products) {
+            if (product.getProductCode() == productCode) {
+                cart.setEmail(email);
+                cart.setProductId(productCode);
+                cart.setProductName(product.getProductName());
+                cart.setProductQuantity(quantity);
+                productRepository.cartSave(cart);
+                System.out.println("Đã thêm vào giỏ ^^!");
+                count++;
+            }
+        }
+        if (count == 0) {
+            System.out.println("Không tìm thấy mã sản phẩm : " + productCode);
+        }
+    }
+
+    public void cart1(String email, int productCode, int quantity) {
+        int count = 0;
+        for (int i = 0; i < CartDB.carts.size(); i++) {
+            if (CartDB.carts.get(i).getEmail().equals(email) && CartDB.carts.get(i).getProductId() == productCode) {
+                CartDB.carts.get(i).setProductQuantity(quantity);
+                FileUtils.setDataToFile("cart.json",CartDB.carts);
+                System.out.println("Đã thêm vào giỏ ^^!");
+                count++;
+            }
+        }
+        if (count == 0) {
+            int count1 = 0;
+            Cart cart = new Cart();
+            for (Product product: ProductDB.products) {
+                if (product.getProductCode() == productCode) {
+                    cart.setEmail(email);
+                    cart.setProductId(productCode);
+                    cart.setProductName(product.getProductName());
+                    cart.setProductQuantity(quantity);
+                    productRepository.cartSave(cart);
+                    System.out.println("Đã thêm vào giỏ ^^!");
+                    count1++;
+                }
+            }
+            if (count1 == 0) {
+                System.out.println("Không tìm thấy mã sản phẩm : " + productCode);
+            }
+        }
     }
 }

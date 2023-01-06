@@ -9,7 +9,6 @@ import TGDDproduct_management.backend.model.Address;
 import TGDDproduct_management.backend.model.Admin;
 import TGDDproduct_management.backend.model.Product;
 import TGDDproduct_management.backend.model.User;
-import TGDDproduct_management.backend.request.ProductRequest;
 import TGDDproduct_management.backend.request.UserRegister;
 
 import java.util.Scanner;
@@ -212,15 +211,18 @@ public class Display {
                 }
                 switch (option) {
                     case 1: {
-                        try {
-                            System.out.print("Nhập id sản phẩm : ");
-                            int productCode = Integer.parseInt(sc.nextLine());
-                            System.out.print("Nhập số lượng : ");
-                            int quantity = Integer.parseInt(sc.nextLine());
-                            ProductRequest productRequest = new ProductRequest(productCode, quantity);
-                            productController.cart(email,productRequest);
-                        } catch (Exception e) {
-                            System.out.println(e.getMessage());
+                        System.out.print("Nhập id sản phẩm : ");
+                        int productCode = Integer.parseInt(sc.nextLine());
+                        System.out.print("Nhập số lượng : ");
+                        int quantity = Integer.parseInt(sc.nextLine());
+                        // Trong giỏ có sẵn rồi thì vào vòng if(true), chưa có thì vào else-if(false)
+                        productController.checkDataCart(email);
+                        if (productController.checkDataCart(email)) {
+                            productController.cart1(email,productCode,quantity);
+                            break;
+                        } else if (!productController.checkDataCart(email)) {
+                            productController.cart(email,productCode,quantity);
+                            break;
                         }
                         break;
                     }
@@ -366,6 +368,7 @@ public class Display {
     }
 
 
+    // Tìm lại mật khẩu
     public static void findPasswordByEmail(String email) {
         userController.findPasswordByEmail(email);
     }
