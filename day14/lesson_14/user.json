@@ -1,7 +1,7 @@
 [
   {
     "username": "dungpham",
-    "password": "12345678",
+    "password": "taokobiet123",
     "email": "dungpngoc@gmail.com",
     "phoneNumber": "0966022688",
     "address": {
@@ -43,6 +43,30 @@
     "address": {
       "province": "Bắc Giang",
       "district": "Dĩnh Kế",
+      "street": "Minh Khai",
+      "houseNumber": 291
+    }
+  },
+  {
+    "username": "PHẠM NGỌC DŨNG",
+    "password": "anhyeuem123",
+    "email": "pnd@gmail.com",
+    "phoneNumber": "0966022688",
+    "address": {
+      "province": "Bắc Giang",
+      "district": "Dĩnh Kế",
+      "street": "Nguyễn Thị Minh Khai",
+      "houseNumber": 291
+    }
+  },
+  {
+    "username": "Dũng Phạm",
+    "password": "12345678",
+    "email": "pnd2@gmail.com",
+    "phoneNumber": "0966022688",
+    "address": {
+      "province": "Bắc Giang",
+      "district": "Hà Bắc",
       "street": "Minh Khai",
       "houseNumber": 291
     }

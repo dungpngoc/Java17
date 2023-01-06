@@ -4,8 +4,6 @@
     "productName": "Iphone 12",
     "description": "iOS",
     "price": 11200000,
-    "quantity": 5,
-    "soldQuantity": 10,
     "brand": "Apple",
     "categories": "Điện thoại"
   },
@@ -14,8 +12,6 @@
     "productName": "Iphone 13",
     "description": "iOS",
     "price": 18880000,
-    "quantity": 20,
-    "soldQuantity": 20,
     "brand": "Apple",
     "categories": "Điện thoại"
   },
@@ -24,8 +20,6 @@
     "productName": "Iphone 14",
     "description": "iOS",
     "price": 30990000,
-    "quantity": 30,
-    "soldQuantity": 30,
     "brand": "Apple",
     "categories": "Điện thoại"
   },
@@ -34,8 +28,6 @@
     "productName": "SamSung Z Series",
     "description": "Androi",
     "price": 20600000,
-    "quantity": 20,
-    "soldQuantity": 15,
     "brand": "SamSung",
     "categories": "Điện thoại"
   },
@@ -44,8 +36,6 @@
     "productName": "SamSung A Series",
     "description": "Androi",
     "price": 2700000,
-    "quantity": 10,
-    "soldQuantity": 12,
     "brand": "SamSung",
     "categories": "Điện thoại"
   },
@@ -54,8 +44,6 @@
     "productName": "SamSung Galaxy S10",
     "description": "Androi",
     "price": 15100000,
-    "quantity": 15,
-    "soldQuantity": 16,
     "brand": "SamSung",
     "categories": "Điện thoại"
   },
@@ -64,8 +52,6 @@
     "productName": "Xiaomi Redmi A1",
     "description": "Androi",
     "price": 2190000,
-    "quantity": 8,
-    "soldQuantity": 20,
     "brand": "Xiaomi",
     "categories": "Điện thoại"
   },
@@ -74,8 +60,6 @@
     "productName": "Xiaomi 11T",
     "description": "Androi",
     "price": 7990000,
-    "quantity": 12,
-    "soldQuantity": 19,
     "brand": "Xiaomi",
     "categories": "Điện thoại"
   },
@@ -84,8 +68,6 @@
     "productName": "Xiaomi 11 Lite",
     "description": "Androi",
     "price": 9490000,
-    "quantity": 9,
-    "soldQuantity": 22,
     "brand": "Xiaomi",
     "categories": "Điện thoại"
   },
@@ -94,8 +76,6 @@
     "productName": "Xiaomi Redmi 9A",
     "description": "Androi",
     "price": 1990000,
-    "quantity": 15,
-    "soldQuantity": 28,
     "brand": "Xiaomi",
     "categories": "Điện thoại"
   },
@@ -104,8 +84,6 @@
     "productName": "MacBook Pro 16",
     "description": "iOS",
     "price": 62990000,
-    "quantity": 10,
-    "soldQuantity": 15,
     "brand": "Apple",
     "categories": "Laptop"
   },
@@ -114,8 +92,6 @@
     "productName": "MacBook 14",
     "description": "iOS",
     "price": 45990000,
-    "quantity": 12,
-    "soldQuantity": 10,
     "brand": "Apple",
     "categories": "Laptop"
   },
@@ -124,8 +100,6 @@
     "productName": "MacBook 13",
     "description": "iOS",
     "price": 27999000,
-    "quantity": 25,
-    "soldQuantity": 9,
     "brand": "Apple",
     "categories": "Laptop"
   },
@@ -134,8 +108,6 @@
     "productName": "MacBook Air 13",
     "description": "iOS",
     "price": 22999000,
-    "quantity": 30,
-    "soldQuantity": 8,
     "brand": "Apple",
     "categories": "Laptop"
   },
@@ -144,8 +116,6 @@
     "productName": "Asus TUF",
     "description": "Window",
     "price": 13190000,
-    "quantity": 19,
-    "soldQuantity": 21,
     "brand": "Asus",
     "categories": "Laptop"
   },
@@ -154,8 +124,6 @@
     "productName": "Dell Xps 13 Plus 9320 i7",
     "description": "Window",
     "price": 59990000,
-    "quantity": 6,
-    "soldQuantity": 17,
     "brand": "Dell",
     "categories": "Laptop"
   },
@@ -164,8 +132,6 @@
     "productName": "Dell Xps 15 9510 i7",
     "description": "Window",
     "price": 41990000,
-    "quantity": 20,
-    "soldQuantity": 25,
     "brand": "Dell",
     "categories": "Laptop"
   },
@@ -174,8 +140,6 @@
     "productName": "Dell Inspiron 3520",
     "description": "Window",
     "price": 16590000,
-    "quantity": 2,
-    "soldQuantity": 12,
     "brand": "Dell",
     "categories": "Laptop"
   },
@@ -184,8 +148,6 @@
     "productName": "Dell Inspiron 3505",
     "description": "Window",
     "price": 10990000,
-    "quantity": 6,
-    "soldQuantity": 16,
     "brand": "Dell",
     "categories": "Laptop"
   },
@@ -194,8 +156,6 @@
     "productName": "Dell Latitude 9420",
     "description": "Window",
     "price": 28990000,
-    "quantity": 6,
-    "soldQuantity": 5,
     "brand": "Dell",
     "categories": "Laptop"
   }

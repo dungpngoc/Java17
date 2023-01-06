@@ -1,5 +1,6 @@
 package TGDDproduct_management.backend.controller;
 import TGDDproduct_management.backend.model.Cart;
+import TGDDproduct_management.backend.model.Product;
 import TGDDproduct_management.backend.request.ProductRequest;
 import TGDDproduct_management.backend.service.ProductService;
 
@@ -10,10 +11,6 @@ public class ProductController {
     }
 
 
-    public boolean checkQuantity(int quantity) {
-        return productService.checkQuantity(quantity);
-    }
-
     public Cart cart(String email, ProductRequest productRequest) {
         return productService.cart(email,productRequest);
     }
@@ -22,7 +19,23 @@ public class ProductController {
         productService.showCart(email);
     }
 
-    public void totalCart(String email,ProductRequest productRequest) {
-        productService.totalCart(email,productRequest);
+    public void totalCart(String email) {
+        productService.totalCart(email);
+    }
+
+    public void deleteInCart(String email,int id) {
+        productService.deleteInCart(email,id);
+    }
+
+    public void deleteByEmail(String email) {
+        productService.deleteByEmail(email);
+    }
+
+    public boolean checkProduct(String productName) {
+        return productService.checkProduct(productName);
+    }
+
+    public Product addNewProduct(Product product) {
+        return productService.addNewProduct(product);
     }
 }

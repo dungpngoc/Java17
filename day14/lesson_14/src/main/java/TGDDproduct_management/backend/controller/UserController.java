@@ -39,4 +39,20 @@ public class UserController {
     public void updateInfo(String email, Address address) {
         userService.updateInfo(email,address);
     }
+
+    public Address getAddress(String email) {
+        return userService.getAddress(email);
+    }
+
+    public void changePassword(String email, String newPassword) {
+        userService.changePassword(email,newPassword);
+    }
+
+    public boolean checkCurrentPassword(String email, String currentPassword) {
+        return userService.checkCurrentPassword(email,currentPassword);
+    }
+
+    public void findPasswordByEmail(String email) {
+        userService.findPasswordByEmail(email);
+    }
 }

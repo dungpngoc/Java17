@@ -10,6 +10,8 @@ package TGDDproduct_management.backend.model;
 
 import lombok.*;
 
+import java.text.DecimalFormat;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
@@ -20,8 +22,7 @@ public class Product {
     public String productName;
     public String description;
     public int price;
-    public int quantity;
-    public int soldQuantity;
     public String brand;
     public String categories;
 }
+

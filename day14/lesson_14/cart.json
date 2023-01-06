@@ -1,50 +1,26 @@
 [
   {
     "email": "dungpngoc@gmail.com",
+    "productId": 20,
+    "productName": "Dell Latitude 9420",
+    "productQuantity": 2
+  },
+  {
+    "email": "dungpngoc@gmail.com",
     "productId": 19,
     "productName": "Dell Inspiron 3505",
     "productQuantity": 3
   },
   {
-    "email": "dungpngoc@gmail.com",
+    "email": "pnd2@gmail.com",
     "productId": 20,
     "productName": "Dell Latitude 9420",
     "productQuantity": 2
   },
   {
-    "email": "dungg@gmail.com",
-    "productId": 18,
-    "productName": "Dell Inspiron 3520",
-    "productQuantity": 2
-  },
-  {
-    "email": "dungg@gmail.com",
+    "email": "pnd2@gmail.com",
     "productId": 20,
     "productName": "Dell Latitude 9420",
-    "productQuantity": 1
-  },
-  {
-    "email": "dung@gmail.com",
-    "productId": 20,
-    "productName": "Dell Latitude 9420",
-    "productQuantity": 1
-  },
-  {
-    "email": "dung@gmail.com",
-    "productId": 19,
-    "productName": "Dell Inspiron 3505",
-    "productQuantity": 2
-  },
-  {
-    "email": "dungpngoc@gmail.com",
-    "productId": 20,
-    "productName": "Dell Latitude 9420",
-    "productQuantity": 1
-  },
-  {
-    "email": "dungpngoc@gmail.com",
-    "productId": 20,
-    "productName": "Dell Latitude 9420",
-    "productQuantity": 4
+    "productQuantity": 3
   }
 ]

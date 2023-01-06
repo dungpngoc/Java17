@@ -8,6 +8,6 @@ import lombok.*;
 @Setter
 @ToString
 public class Admin {
-    public String user;
+    public String email;
     public String password;
 }

@@ -5,6 +5,7 @@ import TGDDproduct_management.backend.model.Address;
 import TGDDproduct_management.backend.model.User;
 import TGDDproduct_management.backend.repository.UserRepository;
 import TGDDproduct_management.backend.request.UserRegister;
+import TGDDproduct_management.backend.utils.FileUtils;
 
 import java.util.List;
 import java.util.regex.Pattern;
@@ -91,5 +92,50 @@ public class UserService {
 
     public void updateInfo(String email, Address address) {
         userRepository.updateInfo(email,address);
+    }
+
+    public Address getAddress(String email) {
+        Address address = new Address();
+        for (User user: UserDB.users) {
+            if (user.getEmail().equals(email)) {
+                System.out.println("Đơn hàng sẽ được gửi qua địa chỉ : " + "Tỉnh " + user.getAddress().getProvince()
+                + ", phường " + user.getAddress().getDistrict() + ", đường " + user.getAddress().getStreet() + ", số nhà "
+                + user.getAddress().getHouseNumber());
+                System.out.println("Cám ơn bạn đã tin tưởng và sử dụng dịch vụ của chúng tôi ... ");
+                return address;
+            }
+        }
+        throw new NotFoundException("Chưa có thông tin địa chỉ của bạn, hãy cập nhập địa chỉ ...");
+    }
+
+    public void changePassword(String email, String newPassword) {
+        for (User user: UserDB.users) {
+            if (user.getEmail().equals(email)) {
+                user.setPassword(newPassword);
+            }
+        }
+        FileUtils.setDataToFile("user.json",UserDB.users);
+        System.out.println("Đổi mật khẩu thành công");
+    }
+
+    public boolean checkCurrentPassword(String email, String currentPassword) {
+        for (User user: UserDB.users) {
+            if (user.getEmail().equals(email)) {
+                if (user.getPassword().equals(currentPassword)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public void findPasswordByEmail(String email) {
+        for (User user: UserDB.users) {
+            if (user.getEmail().equals(email)) {
+                System.out.println("Chúng tôi đã gửi password đến email của bạn hãy mở email và xác nhận");
+                System.out.println("Password hiện tại của bạn là :");
+                System.out.println(user.getPassword());
+            }
+        }
     }
 }

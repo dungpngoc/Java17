@@ -11,5 +11,5 @@ public class Cart {
     private String email;
     private int productId;
     private String productName;
-    private int productQuantity;
+    public int productQuantity;
 }

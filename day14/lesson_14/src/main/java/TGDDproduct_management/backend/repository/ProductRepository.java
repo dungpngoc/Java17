@@ -21,4 +21,9 @@ public class ProductRepository {
         CartDB.carts.add(cart);
         FileUtils.setDataToFile("cart.json", CartDB.carts);
     }
+
+    public void productSave(Product product1) {
+        ProductDB.products.add(product1);
+        FileUtils.setDataToFile("list-product.json", ProductDB.products);
+    }
 }
