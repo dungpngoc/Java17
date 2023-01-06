@@ -10,6 +10,7 @@ import TGDDproduct_management.backend.request.ProductRequest;
 import TGDDproduct_management.backend.utils.FileUtils;
 
 import java.text.DecimalFormat;
+import java.util.List;
 
 
 public class ProductService {
@@ -125,5 +126,27 @@ public class ProductService {
         productRepository.productSave(product1);
         System.out.println("Thêm sản phẩm mới thành công !!!");
         return product1;
+    }
+
+    public List<Product> deleteById(int productCode) {
+        for (Product product: ProductDB.products) {
+            if (product.getProductCode() == productCode) {
+                ProductDB.products.remove(product);
+                productRepository.saveById(ProductDB.products);
+                return ProductDB.products;
+            }
+        }
+        throw new NotFoundException("Không tìm thấy mã sản phẩm " + productCode);
+    }
+
+    public List<Product> updatePrice(int productCode, int newPrice) {
+        for (Product product: ProductDB.products) {
+            if(product.getProductCode() == productCode) {
+                product.setPrice(newPrice);
+                productRepository.saveById(ProductDB.products);
+                return ProductDB.products;
+            }
+        }
+        throw new NotFoundException("Không tìm thấy mã sản phẩm " + productCode);
     }
 }

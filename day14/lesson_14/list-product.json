@@ -150,13 +150,5 @@
     "price": 10990000,
     "brand": "Dell",
     "categories": "Laptop"
-  },
-  {
-    "productCode": 20,
-    "productName": "Dell Latitude 9420",
-    "description": "Window",
-    "price": 28990000,
-    "brand": "Dell",
-    "categories": "Laptop"
   }
 ]

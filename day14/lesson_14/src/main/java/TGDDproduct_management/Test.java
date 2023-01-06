@@ -8,6 +8,5 @@ public class Test {
     public static void main(String[] args) {
         Display display = new Display();
         display.run();
-        FileUtils.setDataToFile("list-product", ProductDB.products);
     }
 }

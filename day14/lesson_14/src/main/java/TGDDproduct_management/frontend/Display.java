@@ -17,7 +17,6 @@ import java.util.Scanner;
 public class Display {
     static UserController userController = new UserController();
     static ProductController productController = new ProductController();
-    static Admin admin = new Admin();
 
     public void run() {
         Scanner sc = new Scanner(System.in);
@@ -49,8 +48,10 @@ public class Display {
                             adminLoginSucces();
                             break;
                         }
+                        else {
+                            LoginSuccess(email,password);
+                        }
                     }
-                    LoginSuccess(email,password);
                     break;
                 }
                 case 3: {
@@ -74,8 +75,8 @@ public class Display {
 
     private void showMenuAdmin() {
         System.out.println("1 -- Thêm sản phẩm");
-        System.out.println("2 -- Sửa giá sản phẩm");
-        System.out.println("3 -- Xoá sản phẩm");
+        System.out.println("2 -- Xoá sản phẩm");
+        System.out.println("3 -- Sửa giá sản phẩm");
         System.out.println("4 -- Thoát");
     }
 
@@ -117,6 +118,7 @@ public class Display {
 
     // Admin đăng nhập và thao tác trong menu
     private void adminLoginSucces() {
+        System.out.println("Good night ... Welcome Admin Store !!!");
         Scanner sc = new Scanner(System.in);
         boolean isQuitTwo = false;
         while (!isQuitTwo) {
@@ -153,7 +155,39 @@ public class Display {
                     break;
                 }
                 case 2: {
-
+                    try {
+                        System.out.print("Nhập mã sản phẩm muốn xoá : ");
+                        int productCode = Integer.parseInt(sc.nextLine());
+                        productController.deleteById(productCode);
+                        System.out.println("Deleted ... ");
+                        break;
+                    } catch (Exception e) {
+                        System.out.println(e.getMessage());
+                    }
+                    break;
+                }
+                case 3: {
+                    try {
+                        System.out.print("Nhập mã sản phẩm muốn sửa giá : ");
+                        int productCode = Integer.parseInt(sc.nextLine());
+                        System.out.print("Nhập giá tiền : ");
+                        int newPrice = Integer.parseInt(sc.nextLine());
+                        productController.updatePrice(productCode,newPrice);
+                        System.out.println("Updated ... ");
+                        break;
+                    } catch (Exception e) {
+                        System.out.println(e.getMessage());
+                    }
+                    break;
+                }
+                case 4: {
+                    System.out.println("Thoát");
+                    isQuitTwo = true;
+                    break;
+                }
+                default: {
+                    System.out.println("Lựa chọn không hợp lệ");
+                    break;
                 }
             }
         }

@@ -26,4 +26,8 @@ public class ProductRepository {
         ProductDB.products.add(product1);
         FileUtils.setDataToFile("list-product.json", ProductDB.products);
     }
+
+    public void saveById(List<Product> products) {
+        FileUtils.setDataToFile("list-product.json", products);
+    }
 }

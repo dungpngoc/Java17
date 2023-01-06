@@ -4,6 +4,8 @@ import TGDDproduct_management.backend.model.Product;
 import TGDDproduct_management.backend.request.ProductRequest;
 import TGDDproduct_management.backend.service.ProductService;
 
+import java.util.List;
+
 public class ProductController {
     ProductService productService = new ProductService();
     public void showProduct() {
@@ -37,5 +39,13 @@ public class ProductController {
 
     public Product addNewProduct(Product product) {
         return productService.addNewProduct(product);
+    }
+
+    public void deleteById(int productCode) {
+        productService.deleteById(productCode);
+    }
+
+    public void updatePrice(int productCode, int newPrice) {
+        productService.updatePrice(productCode,newPrice);
     }
 }
