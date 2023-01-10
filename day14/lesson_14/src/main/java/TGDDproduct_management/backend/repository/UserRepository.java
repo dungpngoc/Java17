@@ -1,7 +1,6 @@
 package TGDDproduct_management.backend.repository;
 
 import TGDDproduct_management.backend.database.UserDB;
-import TGDDproduct_management.backend.exception.NotFoundException;
 import TGDDproduct_management.backend.model.Address;
 import TGDDproduct_management.backend.model.User;
 import TGDDproduct_management.backend.utils.FileUtils;

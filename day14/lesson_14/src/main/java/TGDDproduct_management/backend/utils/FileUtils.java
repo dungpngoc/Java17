@@ -16,7 +16,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 
 public class FileUtils {
-    // 1. Đọc dữ liệu từ file list-product.json
+    // 1. Đọc dữ liệu Product từ file list-product.json
     public static ArrayList<Product> getDataFromFile(String fileName) {
         try {
             Gson gson = new Gson();
@@ -73,7 +73,7 @@ public class FileUtils {
         }
     }
 
-
+    // 5. Lấy dữ liệu Cart từ file cart.json
     public static ArrayList<Cart> getDataCartFromFile(String fileName) {
         try {
             Gson gson = new Gson();

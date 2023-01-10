@@ -6,7 +6,6 @@ import TGDDproduct_management.backend.exception.NotFoundException;
 import TGDDproduct_management.backend.model.Cart;
 import TGDDproduct_management.backend.model.Product;
 import TGDDproduct_management.backend.repository.ProductRepository;
-import TGDDproduct_management.backend.request.ProductRequest;
 import TGDDproduct_management.backend.utils.FileUtils;
 
 import java.text.DecimalFormat;
@@ -20,15 +19,24 @@ public class ProductService {
         productRepository.findAll();
     }
 
-    public void showCart(String email) {
-        int count = 0;
+    public boolean checkCartByEmail(String email) {
         for (Cart cart: CartDB.carts) {
-            if (cart.getEmail().equals(email)) {
-                System.out.println(cart);
-                count++;
+            if(cart.getEmail().equals(email)) {
+                return true;
             }
         }
-        if (count == 0) {
+        return false;
+    }
+    public void showCart(String email) {
+        if (checkCartByEmail(email)) {
+            System.out.printf("%-20s | %-15s | %-22s | %-8s | %n", "Email", "Mã sản phẩm", "Tên sản phẩm", "Số lượng");
+            for (Cart cart: CartDB.carts) {
+                if (cart.getEmail().equals(email)) {
+                    System.out.printf("%-20s | %-15d | %-22s | %-8d | %n", cart.getEmail(), cart.getProductId(),
+                            cart.getProductName(), cart.getProductQuantity());
+                }
+            }
+        } else if (!checkCartByEmail(email)) {
             System.out.println("Không có sản phẩm nào trong giỏ hàng");
         }
     }
@@ -52,13 +60,18 @@ public class ProductService {
     }
 
     public void deleteInCart(String email, int id) {
+        int count = 0;
         for (int i = 0; i < CartDB.carts.size(); i++) {
             if (CartDB.carts.get(i).getEmail().equals(email) && CartDB.carts.get(i).getProductId() == id) {
                 CartDB.carts.remove(CartDB.carts.get(i));
+                FileUtils.setDataToFile("cart.json", CartDB.carts);
+                System.out.println("Xoá thành công");
+                count++;
             }
         }
-        FileUtils.setDataToFile("cart.json", CartDB.carts);
-        System.out.println("Xoá thành công");
+        if (count == 0) {
+            System.out.println("Không có sản phẩm nào trong giỏ có id " + id);
+        }
     }
 
     public void deleteByEmail(String email) {

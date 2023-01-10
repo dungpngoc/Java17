@@ -10,7 +10,6 @@ package TGDDproduct_management.backend.model;
 
 import lombok.*;
 
-import java.text.DecimalFormat;
 
 @AllArgsConstructor
 @NoArgsConstructor

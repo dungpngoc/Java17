@@ -33,6 +33,8 @@ public class Display {
             }
             switch (option) {
                 case 1: {
+                    System.out.println("-------------------------------------Happy New Year 2023-------------------------------------");
+                    System.out.println("-------------------------Chúc quý khách năm mới ăn khang thinh vượng-------------------------\n");
                     productController.showProduct();
                     break;
                 }
@@ -83,8 +85,8 @@ public class Display {
     // Vào cửa hàng: Sẽ hiện ra tất cả các sản phẩm
     // Quên mật khẩu sẽ tìm = email và sẽ gửi lại password cho người dùng
     public static void showMenu() {
-        System.out.println("------------------------Chào mừng bạn đến với Thế Giới Di Động-----------------------");
-        System.out.println("---------Hãy đăng nhập hoặc đăng ký làm thành viên mới để mua hàng và nhận những ưu đãi---------");
+        System.out.println("----------------------------Chào mừng bạn đến với Thế Giới Di Động---------------------------");
+        System.out.println("--------Hãy đăng nhập hoặc đăng ký làm thành viên mới để mua hàng và nhận những ưu đãi-------\n");
         System.out.println("1 -- Vào cửa hàng");
         System.out.println("2 -- Đăng nhập");
         System.out.println("3 -- Đăng ký");
@@ -104,7 +106,7 @@ public class Display {
     // Nếu chọn xem giỏ hàng sẽ hiện ra các option ở MenuThree
     public static void showMenuThree() {
         System.out.println("1 -- Xoá sản phẩm trong giỏ hàng");
-        System.out.println("2 -- Xem thêm sản phẩm");
+        System.out.println("2 -- Quay lại và xem thêm sản phẩm");
         System.out.println("3 -- Thanh toán");
     }
 
@@ -196,7 +198,7 @@ public class Display {
         Scanner sc = new Scanner(System.in);
         try {
             userController.checkLogin(email, password);
-            System.out.println("Hãy tham khảo các sản phẩm của chúng tôi : ");
+            System.out.println(". . . . . . . . . . . . . Hãy tham khảo các sản phẩm của chúng tôi . . . . . . . . . . . . . ");
             productController.showProduct();
             boolean isQuitTwo = false;
             while (!isQuitTwo) {

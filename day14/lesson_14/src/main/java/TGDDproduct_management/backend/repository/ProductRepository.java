@@ -7,15 +7,16 @@ import TGDDproduct_management.backend.model.Product;
 import TGDDproduct_management.backend.utils.FileUtils;
 
 import java.util.List;
-
 public class ProductRepository {
-
-    public List<Product> findAll() {
+    public void findAll() {
+        System.out.printf("%-12s | %-21s | %-12s | %-10s | %-10s | %-11s |%n",
+                "Mã sản phẩm", "Tên sản phẩm", "Hệ Điều Hành", "Giá", "Hãng", "Loại máy" );
         for (Product product: ProductDB.products) {
-            System.out.println(product);
+            System.out.printf("%-12d | %-21s | %-12s | %-10d | %-10s | %-11s |%n",product.getProductCode(),product.getProductName(),
+                    product.getDescription(),product.getPrice(),product.getBrand(),product.getCategories());
         }
-        return ProductDB.products;
     }
+
 
     public void cartSave(Cart cart) {
         CartDB.carts.add(cart);

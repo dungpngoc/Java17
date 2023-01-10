@@ -73,8 +73,8 @@ public class UserService {
     public User checkLogin(String email, String password) {
         for (User user: UserDB.users) {
             if (user.getEmail().equals(email) && user.getPassword().equals(password)) {
-                System.out.printf("Welcome %s đến với thế giới di động", user.getUsername());
-                System.out.println();
+                System.out.printf("- - - - - - - - - - - - - Welcome %s đến với thế giới di động - - - - - - - - - - - - \n", user.getUsername());
+                System.out.println("-------------------------Chúc quý khách năm mới ăn khang thinh vượng------------------------\n");
                 return user;
             }
         }
