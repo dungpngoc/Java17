@@ -55,4 +55,8 @@ public class ProductController {
     public void cart1(String email, int productCode, int quantity) {
         productService.cart1(email,productCode,quantity);
     }
+
+    public void changeQuantyti(String email, int productCode, int productQuantity) {
+        productService.changeQuantity(email,productCode,productQuantity);
+    }
 }

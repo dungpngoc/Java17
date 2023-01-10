@@ -180,4 +180,13 @@ public class ProductService {
             }
         }
     }
+
+    public void changeQuantity(String email, int productCode, int productQuantity) {
+        for (Cart cart: CartDB.carts) {
+            if (cart.getEmail().equals(email) && cart.getProductId() == productCode) {
+                cart.setProductQuantity(productQuantity);
+                FileUtils.setDataToFile("cart.json",CartDB.carts);
+            }
+        }
+    }
 }

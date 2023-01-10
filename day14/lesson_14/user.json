@@ -13,7 +13,7 @@
   },
   {
     "username": "Phạm Ngọc Dũng",
-    "password": "0966022688",
+    "password": "anhyeuem123",
     "email": "dungpham@gmail.com",
     "phoneNumber": "0966022688",
     "address": {
@@ -81,6 +81,18 @@
       "district": "Dĩnh Kế",
       "street": "Minh Khai",
       "houseNumber": 291
+    }
+  },
+  {
+    "username": "Pham Ngoc Dung",
+    "password": "12345678",
+    "email": "dung888@gmail.com",
+    "phoneNumber": "0966022688",
+    "address": {
+      "province": "Ha Noi",
+      "district": "Cau Giay",
+      "street": "Dich Vong",
+      "houseNumber": 12
     }
   }
 ]

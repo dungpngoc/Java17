@@ -34,7 +34,7 @@ public class Display {
             switch (option) {
                 case 1: {
                     System.out.println("-------------------------------------Happy New Year 2023-------------------------------------");
-                    System.out.println("-------------------------Chúc quý khách năm mới ăn khang thinh vượng-------------------------\n");
+                    System.out.println("-------------------------Chúc quý khách năm mới an khang thinh vượng-------------------------\n");
                     productController.showProduct();
                     break;
                 }
@@ -106,8 +106,9 @@ public class Display {
     // Nếu chọn xem giỏ hàng sẽ hiện ra các option ở MenuThree
     public static void showMenuThree() {
         System.out.println("1 -- Xoá sản phẩm trong giỏ hàng");
-        System.out.println("2 -- Quay lại và xem thêm sản phẩm");
-        System.out.println("3 -- Thanh toán");
+        System.out.println("2 -- Cập nhập số lượng sản phẩm");
+        System.out.println("3 -- Quay lại và xem thêm sản phẩm");
+        System.out.println("4 -- Thanh toán");
     }
 
     // Sau khi chọn MenuTwo và chọn mục 3 cập nhập thông tin cá nhân sẽ bao gồm địa chỉ và thay đổi password
@@ -213,12 +214,11 @@ public class Display {
                 }
                 switch (option) {
                     case 1: {
-                        System.out.print("Nhập id sản phẩm : ");
+                        System.out.print("Nhập mã sản phẩm : ");
                         int productCode = Integer.parseInt(sc.nextLine());
                         System.out.print("Nhập số lượng : ");
                         int quantity = Integer.parseInt(sc.nextLine());
                         // Trong giỏ có sẵn rồi thì vào vòng if(true), chưa có thì vào else-if(false)
-                        productController.checkDataCart(email);
                         if (productController.checkDataCart(email)) {
                             productController.cart1(email,productCode,quantity);
                             break;
@@ -244,12 +244,26 @@ public class Display {
                                     break;
                                 }
                                 case 2: {
+                                    if (productController.checkDataCart(email)) {
+                                        System.out.println("--------------> Cập nhập số lượng trong giỏ hàng <--------------");
+                                        System.out.print("Nhập mã sản phẩm : ");
+                                        int productCode = Integer.parseInt(sc.nextLine());
+                                        System.out.print("Nhập số lượng cập nhập : ");
+                                        int productQuantity = Integer.parseInt(sc.nextLine());
+                                        productController.changeQuantyti(email,productCode,productQuantity);
+                                        System.out.println("Cập nhập thành công !!!");
+                                    } else if (!productController.checkDataCart(email)) {
+                                        System.out.println("Không có sản phẩm nào trong giỏ, hãy quay lại và chọn sản phẩm !!!");
+                                    }
+                                    break;
+                                }
+                                case 3: {
                                     System.out.println("Hãy xem thêm sản phẩm của chúng tôi ...");
                                     productController.showProduct();
                                     isQuitFord = true;
                                     break;
                                 }
-                                case 3: {
+                                case 4: {
                                     // Sau khi thanh toán, xoá ko hết dữ liệu
                                     try {
                                         System.out.print("Nhập số tài khoản ngân hàng : ");
@@ -341,7 +355,7 @@ public class Display {
     // Đăng kí tài khoản
     public static void Registration() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("----------------------Đăng ký tài khoản----------------------");
+        System.out.println("----------------------> Đăng ký tài khoản <----------------------");
         System.out.print("Nhập username : ");
         String username = sc.nextLine();
         System.out.print("Nhập password : ");

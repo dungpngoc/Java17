@@ -158,5 +158,13 @@
     "price": 35900000,
     "brand": "Dell",
     "categories": "Laptop"
+  },
+  {
+    "productCode": 25000000,
+    "productName": "123",
+    "description": "123",
+    "price": 25000600,
+    "brand": "Dell",
+    "categories": "Laptop"
   }
 ]
