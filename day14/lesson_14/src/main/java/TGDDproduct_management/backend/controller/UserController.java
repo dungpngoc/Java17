@@ -55,4 +55,8 @@ public class UserController {
     public void findPasswordByEmail(String email) {
         userService.findPasswordByEmail(email);
     }
+
+    public void showAddress(String email, Address address) {
+        userService.showAddress(email,address);
+    }
 }

@@ -1,7 +1,6 @@
 package TGDDproduct_management.backend.controller;
 import TGDDproduct_management.backend.model.Cart;
 import TGDDproduct_management.backend.model.Product;
-import TGDDproduct_management.backend.request.ProductRequest;
 import TGDDproduct_management.backend.service.ProductService;
 
 import java.util.List;
@@ -48,7 +47,7 @@ public class ProductController {
         return productService.checkDataCart(email);
     }
 
-    public void cart(String email,int productCode, int quantity ) {
+    public void cart(String email, int productCode, int quantity ) {
         productService.cart(email,productCode,quantity);
     }
 

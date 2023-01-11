@@ -101,26 +101,34 @@ public class ProductService {
         return product1;
     }
 
-    public List<Product> deleteById(int productCode) {
-        for (Product product: ProductDB.products) {
-            if (product.getProductCode() == productCode) {
-                ProductDB.products.remove(product);
+    public void deleteById(int productCode) {
+        int count = 0;
+        for (int i = 0; i < ProductDB.products.size(); i++) {
+            if (ProductDB.products.get(i).getProductCode() == productCode) {
+                ProductDB.products.remove(ProductDB.products.get(i));
                 productRepository.saveById(ProductDB.products);
-                return ProductDB.products;
+                System.out.println("Deleted ...");
+                count++;
             }
         }
-        throw new NotFoundException("Không tìm thấy mã sản phẩm " + productCode);
+        if (count == 0) {
+            System.out.println("Không tìm thấy mã sản phẩm " + productCode);
+        }
     }
 
-    public List<Product> updatePrice(int productCode, int newPrice) {
+    public void updatePrice(int productCode, int newPrice) {
+        int count = 0;
         for (Product product: ProductDB.products) {
             if(product.getProductCode() == productCode) {
                 product.setPrice(newPrice);
                 productRepository.saveById(ProductDB.products);
-                return ProductDB.products;
+                System.out.println("Updated ... ");
+                count++;
             }
         }
-        throw new NotFoundException("Không tìm thấy mã sản phẩm " + productCode);
+        if (count == 0) {
+            System.out.println("Không tìm thấy mã sản phẩm " + productCode);
+        }
     }
 
     public boolean checkDataCart(String email) {

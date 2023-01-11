@@ -26,7 +26,7 @@
   {
     "productCode": 4,
     "productName": "SamSung Z Series",
-    "description": "Androi",
+    "description": "Android",
     "price": 20600000,
     "brand": "SamSung",
     "categories": "Điện thoại"
@@ -34,7 +34,7 @@
   {
     "productCode": 5,
     "productName": "SamSung A Series",
-    "description": "Androi",
+    "description": "Android",
     "price": 2700000,
     "brand": "SamSung",
     "categories": "Điện thoại"
@@ -42,7 +42,7 @@
   {
     "productCode": 6,
     "productName": "SamSung Galaxy S10",
-    "description": "Androi",
+    "description": "Android",
     "price": 15100000,
     "brand": "SamSung",
     "categories": "Điện thoại"
@@ -50,7 +50,7 @@
   {
     "productCode": 7,
     "productName": "Xiaomi Redmi A1",
-    "description": "Androi",
+    "description": "Android",
     "price": 2190000,
     "brand": "Xiaomi",
     "categories": "Điện thoại"
@@ -58,7 +58,7 @@
   {
     "productCode": 8,
     "productName": "Xiaomi 11T",
-    "description": "Androi",
+    "description": "Android",
     "price": 7990000,
     "brand": "Xiaomi",
     "categories": "Điện thoại"
@@ -66,7 +66,7 @@
   {
     "productCode": 9,
     "productName": "Xiaomi 11 Lite",
-    "description": "Androi",
+    "description": "Android",
     "price": 9490000,
     "brand": "Xiaomi",
     "categories": "Điện thoại"
@@ -74,7 +74,7 @@
   {
     "productCode": 10,
     "productName": "Xiaomi Redmi 9A",
-    "description": "Androi",
+    "description": "Android",
     "price": 1990000,
     "brand": "Xiaomi",
     "categories": "Điện thoại"
@@ -160,11 +160,11 @@
     "categories": "Laptop"
   },
   {
-    "productCode": 25000000,
-    "productName": "123",
-    "description": "123",
-    "price": 25000600,
-    "brand": "Dell",
-    "categories": "Laptop"
+    "productCode": 22,
+    "productName": "321312312",
+    "description": "32132131",
+    "price": 15000000,
+    "brand": "321312312",
+    "categories": "31232131"
   }
 ]

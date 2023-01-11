@@ -130,11 +130,27 @@ public class UserService {
     }
 
     public void findPasswordByEmail(String email) {
+        int count = 0;
         for (User user: UserDB.users) {
             if (user.getEmail().equals(email)) {
                 System.out.println("Chúng tôi đã gửi password đến email của bạn hãy mở email và xác nhận");
                 System.out.println("Password hiện tại của bạn là :");
                 System.out.println(user.getPassword());
+                count++;
+            }
+        }
+        if (count == 0) {
+            System.out.println("Không tìm thấy email " + email);
+        }
+    }
+
+    public void showAddress(String email, Address address) {
+        for (User user: UserDB.users) {
+            if (user.getEmail().equals(email)) {
+                System.out.println("Thông tin địa chỉ của anh/chị " + user.getUsername() + " là :");
+                System.out.printf("%-15s | %-15s | %-20s | %-7s | %n", "Tỉnh/Thành phố", "Quận/Huyện", "Đường", "Số nhà");
+                System.out.printf("%-15s | %-15s | %-20s | %-7d | %n", address.getProvince(), address.getDistrict(),
+                        address.getStreet(), address.getHouseNumber());
             }
         }
     }

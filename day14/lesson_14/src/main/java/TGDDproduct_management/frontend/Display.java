@@ -75,10 +75,11 @@ public class Display {
 
 
     private void showMenuAdmin() {
-        System.out.println("1 -- Thêm sản phẩm");
-        System.out.println("2 -- Xoá sản phẩm");
-        System.out.println("3 -- Sửa giá sản phẩm");
-        System.out.println("4 -- Thoát");
+        System.out.println("1 -- Xem danh sách sản phẩm");
+        System.out.println("2 -- Thêm sản phẩm");
+        System.out.println("3 -- Xoá sản phẩm");
+        System.out.println("4 -- Sửa giá sản phẩm");
+        System.out.println("5 -- Thoát");
     }
 
     // Menu ban đầu
@@ -135,54 +136,78 @@ public class Display {
             }
             switch (option) {
                 case 1: {
-                    System.out.println("-------------Nhập thông tin sản phẩm mới-------------");
-                    System.out.print("Nhập mã sản phẩm : ");
-                    int productCode = Integer.parseInt(sc.nextLine());
-                    System.out.print("Nhập tên sản phẩm : ");
-                    String productName = sc.nextLine();
-                    System.out.print("Nhập hệ điều hành : ");
-                    String description = sc.nextLine();
-                    System.out.print("Nhập giá : ");
-                    int price = Integer.parseInt(sc.nextLine());
-                    System.out.print("Nhập hãng : ");
-                    String brand = sc.nextLine();
-                    System.out.print("Nhập loại máy : ");
-                    String categories = sc.nextLine();
-                    if (!productController.checkProduct(productName)) {
-                        System.out.println("Sản phẩm đã tồn tại");
-                    } else if (productController.checkProduct(productName)) {
-                        Product product = new Product(productCode,productName,description,price,brand,categories);
-                        productController.addNewProduct(product);
-                    }
+                    System.out.println("-----------------------------------------> LIST PRODUCT <-----------------------------------------");
+                    productController.showProduct();
+                    System.out.println("--------------------------------------------------------------------------------------------------");
                     break;
                 }
                 case 2: {
-                    try {
-                        System.out.print("Nhập mã sản phẩm muốn xoá : ");
-                        int productCode = Integer.parseInt(sc.nextLine());
-                        productController.deleteById(productCode);
-                        System.out.println("Deleted ... ");
-                        break;
-                    } catch (Exception e) {
-                        System.out.println(e.getMessage());
-                    }
+                    int productCode = -1;
+                    int price = -1;
+                    boolean check = true;
+                    do {
+                        try {
+                            System.out.println("-------------Nhập thông tin sản phẩm mới-------------");
+                            System.out.print("Nhập mã sản phẩm : ");
+                            productCode = Integer.parseInt(sc.nextLine());
+                            System.out.print("Nhập tên sản phẩm : ");
+                            String productName = sc.nextLine();
+                            System.out.print("Nhập hệ điều hành : ");
+                            String description = sc.nextLine();
+                            System.out.print("Nhập giá : ");
+                            price = Integer.parseInt(sc.nextLine());
+                            System.out.print("Nhập hãng : ");
+                            String brand = sc.nextLine();
+                            System.out.print("Nhập loại máy : ");
+                            String categories = sc.nextLine();
+                            check = false;
+                            if (!productController.checkProduct(productName)) {
+                                System.out.println("Sản phẩm đã tồn tại");
+                            } else if (productController.checkProduct(productName)) {
+                                Product product = new Product(productCode,productName,description,price,brand,categories);
+                                productController.addNewProduct(product);
+                            }
+                            break;
+                        } catch (Exception e) {
+                            System.out.println("Nhập dữ liệu không đúng đin dạng, hãy nhập lại !!!");
+                        }
+                    } while (check);
                     break;
                 }
                 case 3: {
-                    try {
-                        System.out.print("Nhập mã sản phẩm muốn sửa giá : ");
-                        int productCode = Integer.parseInt(sc.nextLine());
-                        System.out.print("Nhập giá tiền : ");
-                        int newPrice = Integer.parseInt(sc.nextLine());
-                        productController.updatePrice(productCode,newPrice);
-                        System.out.println("Updated ... ");
-                        break;
-                    } catch (Exception e) {
-                        System.out.println(e.getMessage());
-                    }
+                    int productCode = -1;
+                    boolean check = true;
+                    do {
+                        try {
+                            System.out.print("Nhập mã sản phẩm muốn xoá : ");
+                            productCode = Integer.parseInt(sc.nextLine());
+                            check = false;
+                        } catch (Exception e) {
+                            System.out.println("Sai định dạng, hãy nhập lại !!!");
+                        }
+                    } while (check);
+                    productController.deleteById(productCode);
                     break;
                 }
                 case 4: {
+                    int productCode = -1;
+                    int newPrice = -1;
+                    boolean check = true;
+                    do {
+                        try {
+                            System.out.print("Nhập mã sản phẩm muốn sửa giá : ");
+                            productCode = Integer.parseInt(sc.nextLine());
+                            System.out.print("Nhập giá tiền : ");
+                            newPrice = Integer.parseInt(sc.nextLine());
+                            check = false;
+                        } catch (Exception e) {
+                            System.out.println("Nhập sai định dạng, hãy nhập lại !!!");
+                        }
+                    } while (check);
+                    productController.updatePrice(productCode,newPrice);
+                    break;
+                }
+                case 5: {
                     System.out.println("Thoát");
                     isQuitTwo = true;
                     break;
@@ -214,10 +239,21 @@ public class Display {
                 }
                 switch (option) {
                     case 1: {
-                        System.out.print("Nhập mã sản phẩm : ");
-                        int productCode = Integer.parseInt(sc.nextLine());
-                        System.out.print("Nhập số lượng : ");
-                        int quantity = Integer.parseInt(sc.nextLine());
+                        int productCode = -1;
+                        int quantity = -1;
+                        boolean flag = true;
+                        do {
+                            try {
+                                System.out.print("Nhập mã sản phẩm : ");
+                                productCode = Integer.parseInt(sc.nextLine());
+                                System.out.print("Nhập số lượng : ");
+                                quantity = Integer.parseInt(sc.nextLine());
+                                flag = false;
+                            } catch (NumberFormatException e) {
+                                System.out.println("Sai định dạng. Vui lòng nhập lại!");
+                            }
+                        }
+                        while (flag);
                         // Trong giỏ có sẵn rồi thì vào vòng if(true), chưa có thì vào else-if(false)
                         if (productController.checkDataCart(email)) {
                             productController.cart1(email,productCode,quantity);
@@ -238,18 +274,38 @@ public class Display {
                             int option1 = Integer.parseInt(sc.nextLine());
                             switch (option1) {
                                 case 1: {
-                                    System.out.print("Nhập mã sản phẩm cần xoá : ");
-                                    int id = Integer.parseInt(sc.nextLine());
+                                    boolean check = true;
+                                    int id = -1;
+                                    do {
+                                        try {
+                                            System.out.print("Nhập mã sản phẩm cần xoá : ");
+                                            id = Integer.parseInt(sc.nextLine());
+                                            check = false;
+                                        } catch (NumberFormatException e) {
+                                            System.out.println("Sai định dạng. Vui lòng nhập lại!");
+                                        }
+                                    }
+                                    while (check);
                                     productController.deleteInCart(email,id);
                                     break;
                                 }
                                 case 2: {
+                                    int productCode = -1;
+                                    int productQuantity = -1;
+                                    boolean check = true;
+                                    do {
+                                        try {
+                                            System.out.println("--------------> Cập nhập số lượng trong giỏ hàng <--------------");
+                                            System.out.print("Nhập mã sản phẩm : ");
+                                            productCode = Integer.parseInt(sc.nextLine());
+                                            System.out.print("Nhập số lượng cập nhập : ");
+                                            productQuantity = Integer.parseInt(sc.nextLine());
+                                            check = false;
+                                        } catch (Exception e) {
+                                            System.out.println("Sai định dạng. Vui lòng nhập lại!");
+                                        }
+                                    } while (check);
                                     if (productController.checkDataCart(email)) {
-                                        System.out.println("--------------> Cập nhập số lượng trong giỏ hàng <--------------");
-                                        System.out.print("Nhập mã sản phẩm : ");
-                                        int productCode = Integer.parseInt(sc.nextLine());
-                                        System.out.print("Nhập số lượng cập nhập : ");
-                                        int productQuantity = Integer.parseInt(sc.nextLine());
                                         productController.changeQuantyti(email,productCode,productQuantity);
                                         System.out.println("Cập nhập thành công !!!");
                                     } else if (!productController.checkDataCart(email)) {
@@ -292,21 +348,26 @@ public class Display {
                             int option2 = Integer.parseInt(sc.nextLine());
                             switch (option2) {
                                 case 1: {
-                                    System.out.print("Nhập tỉnh : ");
-                                    String province = sc.nextLine();
-                                    System.out.print("Nhập quận : ");
-                                    String district = sc.nextLine();
-                                    System.out.print("Nhập đường : ");
-                                    String street = sc.nextLine();
-                                    System.out.print("Nhập số nhà : ");
-                                    Integer houseNumber = Integer.parseInt(sc.nextLine());
-                                    try {
-                                        Address address = new Address(province,district,street,houseNumber);
-                                        userController.updateInfo(email,address);
-                                        break;
-                                    } catch (Exception e) {
-                                        System.out.println(e.getMessage());
-                                    }
+                                    int houseNumber = -1;
+                                    boolean check = true;
+                                    do {
+                                        try {
+                                            System.out.print("Nhập tỉnh : ");
+                                            String province = sc.nextLine();
+                                            System.out.print("Nhập quận : ");
+                                            String district = sc.nextLine();
+                                            System.out.print("Nhập đường : ");
+                                            String street = sc.nextLine();
+                                            System.out.print("Nhập số nhà : ");
+                                            houseNumber = Integer.parseInt(sc.nextLine());
+                                            Address address = new Address(province,district,street,houseNumber);
+                                            userController.updateInfo(email,address);
+                                            userController.showAddress(email,address);
+                                            check = false;
+                                        } catch (Exception e) {
+                                            System.out.println("Sai định dạng số nhà, hãy nhập lại!");
+                                        }
+                                    } while (check);
                                     break;
                                 }
                                 case 2: {
@@ -324,7 +385,7 @@ public class Display {
                                     break;
                                 }
                                 case 3: {
-                                    System.out.println("Quay lại cửa hàng... Continue ------->");
+                                    System.out.println("Quay lại cửa hàng ... Continue ------->");
                                     isQuitFive = true;
                                     break;
                                 }
