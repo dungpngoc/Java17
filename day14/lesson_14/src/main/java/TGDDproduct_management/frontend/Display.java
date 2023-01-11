@@ -395,9 +395,10 @@ public class Display {
                                 }
                             }
                         }
+                        break;
                     }
                     case 4: {
-                        System.out.println();
+                        System.out.println("Exited ...");
                         isQuitTwo = true;
                         break;
                     }
