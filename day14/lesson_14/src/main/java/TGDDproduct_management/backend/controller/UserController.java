@@ -56,7 +56,12 @@ public class UserController {
         userService.findPasswordByEmail(email);
     }
 
-    public void showAddress(String email, Address address) {
-        userService.showAddress(email,address);
+
+    public void showInfo(String email) {
+        userService.showInfo(email);
+    }
+
+    public boolean checkInfo(String email) {
+        return userService.checkInfo(email);
     }
 }

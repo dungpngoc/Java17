@@ -23,8 +23,6 @@ public class UserService {
         user.setUsername(register.getUsername());
         user.setPassword(register.getPassword());
         user.setEmail(register.getEmail());
-        user.setPhoneNumber(register.getPhoneNumber());
-
         userRepository.saveUser(user);
         return user;
     }
@@ -98,9 +96,8 @@ public class UserService {
         Address address = new Address();
         for (User user: UserDB.users) {
             if (user.getEmail().equals(email)) {
-                System.out.println("Đơn hàng sẽ được gửi qua địa chỉ : " + "Tỉnh " + user.getAddress().getProvince()
-                + ", phường " + user.getAddress().getDistrict() + ", đường " + user.getAddress().getStreet() + ", số nhà "
-                + user.getAddress().getHouseNumber());
+                System.out.printf("Đơn hàng sẽ được gủi cho anh/chị %s tại địa chỉ : Tỉnh/Thành phố %s, Quận/Huyện %s, Đường %s, Số nhà %s, Số điện thoại %s %n",
+                        user.getUsername(), user.getAddress().getProvince(),user.getAddress().getDistrict(),user.getAddress().getStreet(),user.getAddress().getHouseNumber(),user.getAddress().getPhoneNumber());
                 System.out.println("Cám ơn bạn đã tin tưởng và sử dụng dịch vụ của chúng tôi ... ");
                 return address;
             }
@@ -148,10 +145,33 @@ public class UserService {
         for (User user: UserDB.users) {
             if (user.getEmail().equals(email)) {
                 System.out.println("Thông tin địa chỉ của anh/chị " + user.getUsername() + " là :");
-                System.out.printf("%-15s | %-15s | %-20s | %-7s | %n", "Tỉnh/Thành phố", "Quận/Huyện", "Đường", "Số nhà");
-                System.out.printf("%-15s | %-15s | %-20s | %-7d | %n", address.getProvince(), address.getDistrict(),
-                        address.getStreet(), address.getHouseNumber());
+                System.out.printf("%-15s | %-15s | %-20s | %-15s | %-15s | %n", "Tỉnh/Thành phố", "Quận/Huyện", "Đường", "Số nhà", " Số điện thoại");
+                System.out.printf("%-15s | %-15s | %-20s | %-15s | %-15s | %n", address.getProvince(), address.getDistrict(),
+                        address.getStreet(), address.getHouseNumber(), address.getPhoneNumber());
             }
         }
+    }
+
+    public void showInfo(String email) {
+        for (User user: UserDB.users) {
+            if (user.getEmail().equals(email)) {
+                System.out.println("Thông tin địa chỉ của anh/chị " + user.getUsername() + " là :");
+                System.out.printf("%-15s | %-15s | %-20s | %-15s | %-15s | %n", "Tỉnh/Thành phố", "Quận/Huyện", "Đường", "Số nhà", "Số điện thoại");
+                System.out.printf("%-15s | %-15s | %-20s | %-15s | %-15s | %n", user.getAddress().getProvince(), user.getAddress().getDistrict(),
+                        user.getAddress().getStreet(), user.getAddress().getHouseNumber(), user.getAddress().getPhoneNumber());
+            }
+        }
+    }
+
+    public boolean checkInfo(String email) {
+        for (User user: UserDB.users) {
+            if (user.getEmail().equals(email)) {
+                if (user.getAddress().getProvince().isEmpty() || user.getAddress().getProvince().isEmpty() || user.getAddress().getDistrict().isEmpty() ||
+                        user.getAddress().getHouseNumber().isEmpty() || user.getAddress().getPhoneNumber().isEmpty()) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 }

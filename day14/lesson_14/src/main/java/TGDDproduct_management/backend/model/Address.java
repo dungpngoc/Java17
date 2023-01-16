@@ -11,5 +11,6 @@ public class Address {
     private String province;
     private String district;
     private String street;
-    private int houseNumber;
+    private String houseNumber;
+    private String phoneNumber;
 }

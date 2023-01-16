@@ -10,11 +10,11 @@ import TGDDproduct_management.backend.utils.FileUtils;
 import java.util.List;
 public class ProductRepository {
     public void findAll() {
-        System.out.printf("%-12s | %-21s | %-12s | %-15s | %-10s | %-11s |%n",
-                "Mã sản phẩm", "Tên sản phẩm", "Hệ Điều Hành", "Giá", "Hãng", "Loại máy" );
+        System.out.printf("%-12s | %-21s | %-12s | %-15s | %-10s | %-11s | %-9s |%n",
+                "Mã sản phẩm", "Tên sản phẩm", "Hệ Điều Hành", "Giá", "Hãng", "Loại máy", "Số lượng" );
         for (Product product: ProductDB.products) {
-            System.out.printf("%-12d | %-21s | %-12s | %-15s | %-10s | %-11s |%n",product.getProductCode(),product.getProductName(),
-                    product.getDescription(), ProductService.formatMoney(product.getPrice()),product.getBrand(),product.getCategories());
+            System.out.printf("%-12d | %-21s | %-12s | %-15s | %-10s | %-11s | %-10s| %n",product.getProductCode(),product.getProductName(),
+                    product.getDescription(), ProductService.formatMoney(product.getPrice()),product.getBrand(),product.getCategories(),product.getQuantity());
         }
     }
 
@@ -32,4 +32,5 @@ public class ProductRepository {
     public void saveById(List<Product> products) {
         FileUtils.setDataToFile("list-product.json", products);
     }
+
 }

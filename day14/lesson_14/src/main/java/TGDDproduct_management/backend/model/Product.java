@@ -23,5 +23,6 @@ public class Product {
     public int price;
     public String brand;
     public String categories;
+    public int quantity;
 }
 

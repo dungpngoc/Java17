@@ -9,7 +9,9 @@ import TGDDproduct_management.backend.repository.ProductRepository;
 import TGDDproduct_management.backend.utils.FileUtils;
 
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 
 public class ProductService {
@@ -75,8 +77,17 @@ public class ProductService {
     }
 
     public void deleteByEmail(String email) {
+        for (int i = 0; i < CartDB.carts.size(); i++) {
+            for (int j = 0; j < ProductDB.products.size(); j++) {
+                if (CartDB.carts.get(i).getEmail().equals(email) && CartDB.carts.get(i).getProductId() == ProductDB.products.get(j).getProductCode()) {
+                    ProductDB.products.get(j).setQuantity(ProductDB.products.get(j).getQuantity() - CartDB.carts.get(i).getProductQuantity());
+                    FileUtils.setDataToFile("list-product.json", ProductDB.products);
+                }
+            }
+        }
         CartDB.carts.removeIf(cart1 -> cart1.getEmail().equals(email));
         FileUtils.setDataToFile("cart.json", CartDB.carts);
+
     }
 
     public boolean checkProduct(String productName) {
@@ -96,6 +107,7 @@ public class ProductService {
         product1.setPrice(product.getPrice());
         product1.setBrand(product.getBrand());
         product1.setCategories(product.getCategories());
+        product1.setQuantity(product.getQuantity());
         productRepository.productSave(product1);
         System.out.println("Thêm sản phẩm mới thành công !!!");
         return product1;
@@ -134,6 +146,14 @@ public class ProductService {
     public boolean checkDataCart(String email) {
         for (Cart cart: CartDB.carts) {
             if (cart.getEmail().equals(email)) {
+                return true;
+            }
+        }
+        return false;
+    }
+    public boolean checkDataCart1(String email, int productCode) {
+        for (Cart cart: CartDB.carts) {
+            if (cart.getEmail().equals(email) && cart.getProductId() == productCode) {
                 return true;
             }
         }
@@ -194,6 +214,50 @@ public class ProductService {
             if (cart.getEmail().equals(email) && cart.getProductId() == productCode) {
                 cart.setProductQuantity(productQuantity);
                 FileUtils.setDataToFile("cart.json",CartDB.carts);
+            }
+        }
+    }
+
+    public boolean checkQR(int rdQR1, int qr) {
+        if (rdQR1 == qr) {
+            return true;
+        }
+        return false;
+    }
+
+    public boolean checkProductQuantity(int productCode, int quantity) {
+        for (Product product: ProductDB.products) {
+            if (product.getProductCode() == productCode && product.getQuantity() >= quantity) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean checkProductCode(int productCode) {
+        for (Product product: ProductDB.products) {
+            if (product.getProductCode() == productCode) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean checkProductCode1(int productCode) {
+        for (Product product: ProductDB.products) {
+            if (product.getProductCode() == productCode) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public void updateQuantity(int proDuctCode, int quantity) {
+        for (Product product: ProductDB.products) {
+            if(product.getProductCode() == proDuctCode) {
+                product.setQuantity(quantity);
+                FileUtils.setDataToFile("list-product.json", ProductDB.products);
+                System.out.println("Updated ...");
             }
         }
     }

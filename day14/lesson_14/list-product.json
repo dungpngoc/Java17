@@ -5,7 +5,8 @@
     "description": "iOS",
     "price": 11200000,
     "brand": "Apple",
-    "categories": "Điện thoại"
+    "categories": "Điện thoại",
+    "quantity": 25
   },
   {
     "productCode": 2,
@@ -13,7 +14,8 @@
     "description": "iOS",
     "price": 18880000,
     "brand": "Apple",
-    "categories": "Điện thoại"
+    "categories": "Điện thoại",
+    "quantity": 35
   },
   {
     "productCode": 3,
@@ -21,7 +23,8 @@
     "description": "iOS",
     "price": 30990000,
     "brand": "Apple",
-    "categories": "Điện thoại"
+    "categories": "Điện thoại",
+    "quantity": 19
   },
   {
     "productCode": 4,
@@ -29,7 +32,8 @@
     "description": "Android",
     "price": 20600000,
     "brand": "SamSung",
-    "categories": "Điện thoại"
+    "categories": "Điện thoại",
+    "quantity": 42
   },
   {
     "productCode": 5,
@@ -37,7 +41,8 @@
     "description": "Android",
     "price": 2700000,
     "brand": "SamSung",
-    "categories": "Điện thoại"
+    "categories": "Điện thoại",
+    "quantity": 47
   },
   {
     "productCode": 6,
@@ -45,7 +50,8 @@
     "description": "Android",
     "price": 15100000,
     "brand": "SamSung",
-    "categories": "Điện thoại"
+    "categories": "Điện thoại",
+    "quantity": 22
   },
   {
     "productCode": 7,
@@ -53,7 +59,8 @@
     "description": "Android",
     "price": 2190000,
     "brand": "Xiaomi",
-    "categories": "Điện thoại"
+    "categories": "Điện thoại",
+    "quantity": 32
   },
   {
     "productCode": 8,
@@ -61,7 +68,8 @@
     "description": "Android",
     "price": 7990000,
     "brand": "Xiaomi",
-    "categories": "Điện thoại"
+    "categories": "Điện thoại",
+    "quantity": 62
   },
   {
     "productCode": 9,
@@ -69,7 +77,8 @@
     "description": "Android",
     "price": 9490000,
     "brand": "Xiaomi",
-    "categories": "Điện thoại"
+    "categories": "Điện thoại",
+    "quantity": 55
   },
   {
     "productCode": 10,
@@ -77,7 +86,8 @@
     "description": "Android",
     "price": 1990000,
     "brand": "Xiaomi",
-    "categories": "Điện thoại"
+    "categories": "Điện thoại",
+    "quantity": 29
   },
   {
     "productCode": 11,
@@ -85,7 +95,8 @@
     "description": "iOS",
     "price": 62990000,
     "brand": "Apple",
-    "categories": "Laptop"
+    "categories": "Laptop",
+    "quantity": 69
   },
   {
     "productCode": 12,
@@ -93,7 +104,8 @@
     "description": "iOS",
     "price": 45990000,
     "brand": "Apple",
-    "categories": "Laptop"
+    "categories": "Laptop",
+    "quantity": 34
   },
   {
     "productCode": 13,
@@ -101,7 +113,8 @@
     "description": "iOS",
     "price": 27999000,
     "brand": "Apple",
-    "categories": "Laptop"
+    "categories": "Laptop",
+    "quantity": 56
   },
   {
     "productCode": 14,
@@ -109,7 +122,8 @@
     "description": "iOS",
     "price": 22999000,
     "brand": "Apple",
-    "categories": "Laptop"
+    "categories": "Laptop",
+    "quantity": 34
   },
   {
     "productCode": 15,
@@ -117,7 +131,8 @@
     "description": "Window",
     "price": 13190000,
     "brand": "Asus",
-    "categories": "Laptop"
+    "categories": "Laptop",
+    "quantity": 29
   },
   {
     "productCode": 16,
@@ -125,7 +140,8 @@
     "description": "Window",
     "price": 59990000,
     "brand": "Dell",
-    "categories": "Laptop"
+    "categories": "Laptop",
+    "quantity": 22
   },
   {
     "productCode": 17,
@@ -133,7 +149,8 @@
     "description": "Window",
     "price": 41990000,
     "brand": "Dell",
-    "categories": "Laptop"
+    "categories": "Laptop",
+    "quantity": 39
   },
   {
     "productCode": 18,
@@ -141,7 +158,8 @@
     "description": "Window",
     "price": 16590000,
     "brand": "Dell",
-    "categories": "Laptop"
+    "categories": "Laptop",
+    "quantity": 30
   },
   {
     "productCode": 19,
@@ -149,22 +167,16 @@
     "description": "Window",
     "price": 10990000,
     "brand": "Dell",
-    "categories": "Laptop"
+    "categories": "Laptop",
+    "quantity": 5
   },
   {
     "productCode": 20,
     "productName": "Dell XPS 9550",
     "description": "Window",
-    "price": 35900000,
+    "price": 25600000,
     "brand": "Dell",
-    "categories": "Laptop"
-  },
-  {
-    "productCode": 22,
-    "productName": "321312312",
-    "description": "32132131",
-    "price": 15000000,
-    "brand": "321312312",
-    "categories": "31232131"
+    "categories": "Laptop",
+    "quantity": 55
   }
 ]
