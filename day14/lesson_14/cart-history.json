@@ -1,0 +1,44 @@
+[
+  {
+    "email": "pnd2@gmail.com",
+    "productId": 20,
+    "productName": "Dell XPS 9550",
+    "productQuantity": 3
+  },
+  {
+    "email": "pnd2@gmail.com",
+    "productId": 19,
+    "productName": "Dell Inspiron 3505",
+    "productQuantity": 6
+  },
+  {
+    "email": "pnd2@gmail.com",
+    "productId": 16,
+    "productName": "Dell Xps 13 Plus 9320",
+    "productQuantity": 8
+  },
+  {
+    "email": "pnd2@gmail.com",
+    "productId": 17,
+    "productName": "Dell Xps 15 9510",
+    "productQuantity": 5
+  },
+  {
+    "email": "pnd2@gmail.com",
+    "productId": 18,
+    "productName": "Dell Inspiron 3520",
+    "productQuantity": 9
+  },
+  {
+    "email": "dungpngoc@gmail.com",
+    "productId": 20,
+    "productName": "Dell XPS 9550",
+    "productQuantity": 6
+  },
+  {
+    "email": "dungpngoc@gmail.com",
+    "productId": 19,
+    "productName": "Dell Inspiron 3505",
+    "productQuantity": 5
+  }
+]

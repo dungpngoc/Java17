@@ -84,11 +84,11 @@ public class ProductController {
         productService.updateQuantity(proDuctCode,quantity);
     }
 
-//    public void setProductQuantity(String email) {
-//        productService.setProductQuantity(email);
-//    }
-//
-//    public List<Cart> listCartByEmail(String email) {
-//        return productService.listCartByEmail(email);
-//    }
+    public void addCartHistory(String email) {
+        productService.addCartHistory(email);
+    }
+
+    public void showCartHistory() {
+        productService.showCartHistory();
+    }
 }

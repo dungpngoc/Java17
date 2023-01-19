@@ -1,12 +1,9 @@
 package TGDDproduct_management.backend.utils;
 
-import TGDDproduct_management.backend.model.Cart;
+import TGDDproduct_management.backend.model.*;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
-import TGDDproduct_management.backend.model.Admin;
-import TGDDproduct_management.backend.model.Product;
-import TGDDproduct_management.backend.model.User;
 
 import java.io.Reader;
 import java.io.Writer;
@@ -87,5 +84,4 @@ public class FileUtils {
         }
         return null;
     }
-
 }

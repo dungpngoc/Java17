@@ -1,17 +1,5 @@
 [
   {
-    "email": "dungpngoc@gmail.com",
-    "productId": 20,
-    "productName": "Dell Latitude 9420",
-    "productQuantity": 2
-  },
-  {
-    "email": "dungpngoc@gmail.com",
-    "productId": 19,
-    "productName": "Dell Inspiron 3505",
-    "productQuantity": 3
-  },
-  {
     "email": "pnd@gmail.com",
     "productId": 20,
     "productName": "Dell XPS 9550",
@@ -28,11 +16,5 @@
     "productId": 20,
     "productName": "Dell XPS 9550",
     "productQuantity": 6
-  },
-  {
-    "email": "pnd2@gmail.com",
-    "productId": 20,
-    "productName": "Dell XPS 9550",
-    "productQuantity": 5
   }
 ]

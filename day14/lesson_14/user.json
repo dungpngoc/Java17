@@ -4,10 +4,10 @@
     "password": "12345678",
     "email": "pnd2@gmail.com",
     "address": {
-      "province": "Ha Noi",
-      "district": "Cau Giay",
-      "street": "Dich Vong",
-      "houseNumber": "12",
+      "province": "Bắc Giang",
+      "district": "Hà Bắc",
+      "street": "Minh KHai",
+      "houseNumber": "291",
       "phoneNumber": "0966022688"
     }
   },
@@ -56,6 +56,23 @@
       "district": "Hà BẮc",
       "street": "Minh khai",
       "houseNumber": "Ngõ 1 ngách 2",
+      "phoneNumber": "0966022688"
+    }
+  },
+  {
+    "username": "Phạm Ngọc Dũng",
+    "password": "1234567",
+    "email": "vfdvsd@gmail.com"
+  },
+  {
+    "username": "Phạm Ngọc Dũng",
+    "password": "12345678",
+    "email": "dungpngoc@gmail.com",
+    "address": {
+      "province": "Bắc Giang",
+      "district": "Hà Bắc",
+      "street": "Minh Khai",
+      "houseNumber": "291",
       "phoneNumber": "0966022688"
     }
   }

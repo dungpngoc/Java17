@@ -64,4 +64,5 @@ public class UserController {
     public boolean checkInfo(String email) {
         return userService.checkInfo(email);
     }
+
 }

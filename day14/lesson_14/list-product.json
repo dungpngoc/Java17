@@ -141,7 +141,7 @@
     "price": 59990000,
     "brand": "Dell",
     "categories": "Laptop",
-    "quantity": 22
+    "quantity": 14
   },
   {
     "productCode": 17,
@@ -150,7 +150,7 @@
     "price": 41990000,
     "brand": "Dell",
     "categories": "Laptop",
-    "quantity": 39
+    "quantity": 29
   },
   {
     "productCode": 18,
@@ -159,7 +159,7 @@
     "price": 16590000,
     "brand": "Dell",
     "categories": "Laptop",
-    "quantity": 30
+    "quantity": 19
   },
   {
     "productCode": 19,
@@ -168,7 +168,7 @@
     "price": 10990000,
     "brand": "Dell",
     "categories": "Laptop",
-    "quantity": 5
+    "quantity": 40
   },
   {
     "productCode": 20,
@@ -177,6 +177,6 @@
     "price": 25600000,
     "brand": "Dell",
     "categories": "Laptop",
-    "quantity": 55
+    "quantity": 14
   }
 ]

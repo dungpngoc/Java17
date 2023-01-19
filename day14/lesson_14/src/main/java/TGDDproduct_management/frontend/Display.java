@@ -4,7 +4,6 @@ package TGDDproduct_management.frontend;
 import TGDDproduct_management.backend.controller.ProductController;
 import TGDDproduct_management.backend.controller.UserController;
 import TGDDproduct_management.backend.database.AdminDB;
-import TGDDproduct_management.backend.database.ProductDB;
 import TGDDproduct_management.backend.exception.NotFoundException;
 import TGDDproduct_management.backend.model.Address;
 import TGDDproduct_management.backend.model.Admin;
@@ -83,11 +82,12 @@ public class Display {
 
     private void showMenuAdmin() {
         System.out.println("1 -- Xem danh sách sản phẩm");
-        System.out.println("2 -- Thêm sản phẩm");
-        System.out.println("3 -- Xoá sản phẩm");
-        System.out.println("4 -- Update giá sản phẩm");
-        System.out.println("5 -- Update số lượng sản phẩm");
-        System.out.println("6 -- Thoát");
+        System.out.println("2 -- Xen các sản phẩm đã bán");
+        System.out.println("3 -- Thêm sản phẩm");
+        System.out.println("4 -- Xoá sản phẩm");
+        System.out.println("5 -- Update giá sản phẩm");
+        System.out.println("6 -- Update số lượng sản phẩm");
+        System.out.println("7 -- Thoát");
     }
 
     // Menu ban đầu
@@ -150,6 +150,10 @@ public class Display {
                     break;
                 }
                 case 2: {
+                    productController.showCartHistory();
+                    break;
+                }
+                case 3: {
                     int productCode = -1;
                     int price = -1;
                     int quantity = -1;
@@ -225,7 +229,7 @@ public class Display {
                     } while (check);
                     break;
                 }
-                case 3: {
+                case 4: {
                     int productCode = -1;
                     boolean check = true;
                     do {
@@ -245,7 +249,7 @@ public class Display {
                     productController.deleteById(productCode);
                     break;
                 }
-                case 4: {
+                case 5: {
                     int productCode = -1;
                     int newPrice = -1;
                     boolean check = true;
@@ -282,7 +286,7 @@ public class Display {
                     productController.updatePrice(productCode,newPrice);
                     break;
                 }
-                case 5: {
+                case 6: {
                     int proDuctCode = -1;
                     int quantity = -1;
                     boolean check = true;
@@ -319,7 +323,7 @@ public class Display {
                     productController.updateQuantity(proDuctCode,quantity);
                     break;
                 }
-                case 6: {
+                case 7: {
                     System.out.println("Thoát");
                     isQuitTwo = true;
                     break;
@@ -521,6 +525,7 @@ public class Display {
                                                         productController.checkQR(rdQR1,qr);
                                                         if (productController.checkQR(rdQR1,qr)) {
                                                             userController.getAddress(email);
+                                                            productController.addCartHistory(email);
                                                             productController.deleteByEmail(email);
                                                             check = false;
                                                         } else if (!productController.checkQR(rdQR1, qr)) {
@@ -551,8 +556,12 @@ public class Display {
                     case 3: {
                         boolean isQuitFive = false;
                         while (!isQuitFive) {
+                            try {
+                                userController.showInfo(email);
+                            } catch (Exception e) {
+                                System.out.println("Thông tin cá nhân chưa đầy đủ, hãy cập nhập !!!");
+                            }
                             showMenuFord();
-                            userController.showInfo(email);
                             int option2 = -99999;
                             try {
                                 System.out.print("Nhập lựa chọn : ");
