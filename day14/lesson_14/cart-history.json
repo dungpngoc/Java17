@@ -7,18 +7,6 @@
   },
   {
     "email": "pnd2@gmail.com",
-    "productId": 19,
-    "productName": "Dell Inspiron 3505",
-    "productQuantity": 6
-  },
-  {
-    "email": "pnd2@gmail.com",
-    "productId": 16,
-    "productName": "Dell Xps 13 Plus 9320",
-    "productQuantity": 8
-  },
-  {
-    "email": "pnd2@gmail.com",
     "productId": 17,
     "productName": "Dell Xps 15 9510",
     "productQuantity": 5
@@ -40,5 +28,59 @@
     "productId": 19,
     "productName": "Dell Inspiron 3505",
     "productQuantity": 5
+  },
+  {
+    "email": "dung222@gmail.com",
+    "productId": 20,
+    "productName": "Dell XPS 9550",
+    "productQuantity": 3
+  },
+  {
+    "email": "dung222@gmail.com",
+    "productId": 19,
+    "productName": "Dell Inspiron 3505",
+    "productQuantity": 5
+  },
+  {
+    "email": "dung222@gmail.com",
+    "productId": 18,
+    "productName": "Dell Inspiron 3520",
+    "productQuantity": 4
+  },
+  {
+    "email": "dung222@gmail.com",
+    "productId": 17,
+    "productName": "Dell Xps 15 9510",
+    "productQuantity": 2
+  },
+  {
+    "email": "dungbg@gmail.com",
+    "productId": 20,
+    "productName": "Dell XPS 9520",
+    "productQuantity": 3
+  },
+  {
+    "email": "dungbg@gmail.com",
+    "productId": 19,
+    "productName": "Dell Inspiron 3505",
+    "productQuantity": 5
+  },
+  {
+    "email": "dungbg@gmail.com",
+    "productId": 18,
+    "productName": "Dell Inspiron 3520",
+    "productQuantity": 5
+  },
+  {
+    "email": "dung123@gmail.com",
+    "productId": 20,
+    "productName": "Dell XPS 9520",
+    "productQuantity": 2
+  },
+  {
+    "email": "dung123@gmail.com",
+    "productId": 19,
+    "productName": "Dell Inspiron 3505",
+    "productQuantity": 3
   }
 ]

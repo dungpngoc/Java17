@@ -150,7 +150,7 @@
     "price": 41990000,
     "brand": "Dell",
     "categories": "Laptop",
-    "quantity": 29
+    "quantity": 27
   },
   {
     "productCode": 18,
@@ -159,7 +159,7 @@
     "price": 16590000,
     "brand": "Dell",
     "categories": "Laptop",
-    "quantity": 19
+    "quantity": 10
   },
   {
     "productCode": 19,
@@ -168,15 +168,15 @@
     "price": 10990000,
     "brand": "Dell",
     "categories": "Laptop",
-    "quantity": 40
+    "quantity": 27
   },
   {
     "productCode": 20,
-    "productName": "Dell XPS 9550",
+    "productName": "Dell XPS 9520",
     "description": "Window",
     "price": 25600000,
     "brand": "Dell",
     "categories": "Laptop",
-    "quantity": 14
+    "quantity": 25
   }
 ]

@@ -167,9 +167,9 @@ public class Display {
                             do {
                                 System.out.print("Nhập mã sản phẩm : ");
                                 productCode = Integer.parseInt(sc.nextLine());
-                                if (productController.checkProductCode(productCode)) {
+                                if (!productController.checkProductCode(productCode)) {
                                     check1 = false;
-                                } else if (!productController.checkProductCode(productCode)) {
+                                } else if (productController.checkProductCode(productCode)) {
                                     System.out.println("Đã tồn tại mã sản phẩm : " + productCode + ", nhập lại !!!");
                                     check1 = true;
                                 }

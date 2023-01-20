@@ -4,14 +4,11 @@ import TGDDproduct_management.backend.database.CartDB;
 import TGDDproduct_management.backend.database.CartHistoryDB;
 import TGDDproduct_management.backend.database.ProductDB;
 import TGDDproduct_management.backend.model.Cart;
-import TGDDproduct_management.backend.model.CartHistory;
 import TGDDproduct_management.backend.model.Product;
 import TGDDproduct_management.backend.repository.ProductRepository;
 import TGDDproduct_management.backend.utils.FileUtils;
 
 import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.List;
 
 
 public class ProductService {
@@ -272,7 +269,6 @@ public class ProductService {
     }
 
     public void showCartHistory() {
-
         System.out.printf("%-20s | %-15s | %-22s | %-8s | %n", "Email", "Mã sản phẩm", "Tên sản phẩm", "Số lượng");
         for (Cart cart: CartHistoryDB.carts) {
             System.out.printf("%-20s | %-15d | %-22s | %-8d | %n", cart.getEmail(), cart.getProductId(),

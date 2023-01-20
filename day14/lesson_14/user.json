@@ -75,5 +75,56 @@
       "houseNumber": "291",
       "phoneNumber": "0966022688"
     }
+  },
+  {
+    "username": "Phamj Ngoc Dung",
+    "password": "12345678",
+    "email": "dungppp@gmail.com"
+  },
+  {
+    "username": "Phạm Ngọc Dũng",
+    "password": "12345678",
+    "email": "dungp888@gmail.com"
+  },
+  {
+    "username": "Phạm Ngọc Dũng",
+    "password": "toiyeuvietnam",
+    "email": "dung222@gmail.com",
+    "address": {
+      "province": "Bắc Giang",
+      "district": "Ngô Quyền",
+      "street": "Minh Khai",
+      "houseNumber": "ngõ 12 số nhà 22",
+      "phoneNumber": "0966022688"
+    }
+  },
+  {
+    "username": "Phạm Ngọc Dũng",
+    "password": "toiyeuvietnam",
+    "email": "dungbg@gmail.com",
+    "address": {
+      "province": "Bắc Giang",
+      "district": "Ngô Quyền",
+      "street": "Minh Khai",
+      "houseNumber": "ngõ 12 ngách 1",
+      "phoneNumber": "0966022688"
+    }
+  },
+  {
+    "username": "Phạm Ngọc Dũng",
+    "password": "12345678",
+    "email": "dung999@gmail.com"
+  },
+  {
+    "username": "Phạm Ngọc Dũng",
+    "password": "toiyeuvietnam",
+    "email": "dung123@gmail.com",
+    "address": {
+      "province": "Bắc Giang",
+      "district": "Ngô Quyền",
+      "street": "Minh Khai",
+      "houseNumber": "ngõ 1 ngách 2",
+      "phoneNumber": "0966022688"
+    }
   }
 ]
